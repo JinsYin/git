@@ -1,0 +1,66 @@
+{
+  "title": "Git 知识库",
+  "description": "Git 知识库：命令行、配置、奇淫巧技",
+  "language": "zh-hans",
+  "author": "Jins Yin",
+  "links": {
+    "sidebar": {
+      "微架构师": "https://weplay.me",
+      "快速入门": "https://quickstarts.io"
+    }
+  },
+  "styles": {
+    "website": ".gitbook/website.css"
+  },
+  "plugins": [
+    "-fontsettings",
+    "-sharing",
+    "highlight",
+    "github",
+    "-lunr", "-search", "search-pro",
+    "github-buttons@2.1.0",
+    "ga",
+    "page-toc",
+    "splitter",
+    "favicon",
+    "sitemap-general",
+    "edit-link",
+    "lightbox",
+    "page-footer-ex"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/jinsyin/git"
+    },
+    "github-buttons": {
+      "repo": "jinsyin/git",
+      "types": ["star"],
+      "size": "small"
+    },
+    "ga": {
+      "token": "UA-12345678-1"
+    },
+    "edit-link": {
+      "base": "https://github.com/jinsyin/git/blob/master/",
+      "label": "编辑"
+    },
+    "favicon": {
+      "shortcut": "favicon.ico",
+      "bookmark": "favicon.ico"
+    },
+    "sitemap-general": {
+      "prefix": "https://weplay.me/git/"
+    },
+    "page-toc": {
+      "selector": ".markdown-section h2, .markdown-section h3, .markdown-section h4",
+      "position": "top",
+      "showByDefault": false
+    },
+    "page-footer-ex": {
+      "copyright": "Copyright © 2019-2020 | CC BY-NC-SA 4.0 <br/> 相关网站: [知识库](https://weplay.me) [微架构师](https://weplay.me) [快速入门](https://quickstarts.io)",
+      "markdown": true,
+      "update_label": "更新于",
+      "update_format": "YYYY-MM-DD"
+    }
+  }
+}
