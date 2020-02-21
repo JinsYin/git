@@ -2,7 +2,7 @@
 
 ## Git flow
 
-![Git Workflow](.images/git-workflow.jpeg)
+![Git Workflow](-/git-workflow.jpeg)
 
 ## Github flow
 

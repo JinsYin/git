@@ -10,7 +10,7 @@
     }
   },
   "styles": {
-    "website": ".gitbook/website.css"
+    "website": "website.css"
   },
   "plugins": [
     "-fontsettings",
@@ -22,7 +22,7 @@
     "ga",
     "page-toc",
     "splitter",
-    "favicon",
+    "custom-favicon",
     "sitemap-general",
     "edit-link",
     "lightbox",
@@ -44,10 +44,7 @@
       "base": "https://github.com/jinsyin/git/blob/master/",
       "label": "编辑"
     },
-    "favicon": {
-      "shortcut": "favicon.ico",
-      "bookmark": "favicon.ico"
-    },
+    "favicon": "favicon.ico",
     "sitemap-general": {
       "prefix": "https://weplay.me/git/"
     },
