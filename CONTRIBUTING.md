@@ -1,5 +1,27 @@
 # 如何贡献
 
+## 运行
+
+```sh
+# 安装 node.js 和 npm
+$ node --version # v13.2.0
+$ npm --version  # 6.13.7
+
+# 安装 gitbook 实用程序，用于安装和使用多个版本的 GitBook
+$ npm install -g gitbook-cli@2.3.2
+
+# 检查版本
+$ gitbook --version
+CLI version: 2.3.2
+GitBook version: 3.2.3
+
+# 安装 book.json 自定义的插件（安装到 node_modules/ 目录）
+$ gitbook install [./]
+
+# 构建静态文件到 _book/ 目录，服务 http://localhost:4000
+$ gitbook serve
+```
+
 ## 贡献方式
 
 * 遇到问题？ -> 开一个 Issue
@@ -14,4 +36,3 @@
 5. 将新分支推送到您的 Github 仓库：`git push origin <branch-name>:<remote-branch-name>`
 6. 在您的 Github 仓库中发起一个 Pull Request
 7. 必要时可以到本项目仓库创建一个 [issue](https://github.com/JinsYin/knowledge-base/issues/new) 来描述此次 PR
-
