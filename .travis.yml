@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "13.2.0"
+cache: npm
+
+install:
+  - npm install -g gitbook-cli@2.3.2
+  - gitbook install # install gitbook plugins from book.json
+
+script:
+  - gitbook build  # output build results to _book directory
+
+deploy:
+  local_dir: _book
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  target_branch: gh-pages
+  # fqdn: weplay.me        # Add a CNAME file
+  on:
+    branch: master
