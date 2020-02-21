@@ -1,0 +1,1929 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>git checkout · Git 知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jins Yin">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../.gitbook/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="git-cherry-pick.html" />
+    
+    
+    <link rel="prev" href="git-cat-file.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"jinsyin/git","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://weplay.me" target="_blank" class="custom-link">微架构师</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://quickstarts.io" target="_blank" class="custom-link">快速入门</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quickstart.html">
+            
+                <a href="../quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础篇</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../basics/">
+            
+                <a href="../basics/">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../basics/getting-started.html">
+            
+                <a href="../basics/getting-started.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../basics/branch/">
+            
+                <a href="../basics/branch/">
+            
+                    
+                    分支管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../basics/experiment.html">
+            
+                <a href="../basics/experiment.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../basics/file-status.html">
+            
+                <a href="../basics/file-status.html">
+            
+                    
+                    文件状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../basics/server/">
+            
+                <a href="../basics/server/">
+            
+                    
+                    服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../basics/server/gitweb.html">
+            
+                <a href="../basics/server/gitweb.html">
+            
+                    
+                    GitWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../basics/server/protocol.html">
+            
+                <a href="../basics/server/protocol.html">
+            
+                    
+                    Git 协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../basics/server/setup.html">
+            
+                <a href="../basics/server/setup.html">
+            
+                    
+                    搭建 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../basics/workflow.html">
+            
+                <a href="../basics/workflow.html">
+            
+                    
+                    工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../basics/workflow/">
+            
+                <a href="../basics/workflow/">
+            
+                    
+                    workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">底层原理</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../principle/lifecycle.html">
+            
+                <a href="../principle/lifecycle.html">
+            
+                    
+                    文件生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../principle/protocol.html">
+            
+                <a href="../principle/protocol.html">
+            
+                    
+                    传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../principle/object.html">
+            
+                <a href="../principle/object.html">
+            
+                    
+                    Git 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../principle/refs.html">
+            
+                <a href="../principle/refs.html">
+            
+                    
+                    Git 引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">配置文件</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../dotfiles/dotgit.html">
+            
+                <a href="../dotfiles/dotgit.html">
+            
+                    
+                    .git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../dotfiles/dotgitattributes.html">
+            
+                <a href="../dotfiles/dotgitattributes.html">
+            
+                    
+                    .gitattributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../dotfiles/dotgitconfig.html">
+            
+                <a href="../dotfiles/dotgitconfig.html">
+            
+                    
+                    .gitconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../dotfiles/dotgitignore.html">
+            
+                <a href="../dotfiles/dotgitignore.html">
+            
+                    
+                    .gitignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">命令行</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="git-help.html">
+            
+                <a href="git-help.html">
+            
+                    
+                    git help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="git-add.html">
+            
+                <a href="git-add.html">
+            
+                    
+                    git add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="git-apply.html">
+            
+                <a href="git-apply.html">
+            
+                    
+                    git apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="git-archive.html">
+            
+                <a href="git-archive.html">
+            
+                    
+                    git archive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="git-bisect.html">
+            
+                <a href="git-bisect.html">
+            
+                    
+                    git bisect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="git-blame.html">
+            
+                <a href="git-blame.html">
+            
+                    
+                    git blame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="git-branch.html">
+            
+                <a href="git-branch.html">
+            
+                    
+                    git branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="git-cat-file.html">
+            
+                <a href="git-cat-file.html">
+            
+                    
+                    git cat-file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.9" data-path="git-checkout.html">
+            
+                <a href="git-checkout.html">
+            
+                    
+                    git checkout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="git-cherry-pick.html">
+            
+                <a href="git-cherry-pick.html">
+            
+                    
+                    git cherry-pick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="git-clean.html">
+            
+                <a href="git-clean.html">
+            
+                    
+                    git clean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="git-clone.html">
+            
+                <a href="git-clone.html">
+            
+                    
+                    git clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="git-commit.html">
+            
+                <a href="git-commit.html">
+            
+                    
+                    git commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="git-config.html">
+            
+                <a href="git-config.html">
+            
+                    
+                    git config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="git-diff.html">
+            
+                <a href="git-diff.html">
+            
+                    
+                    git diff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="git-difftool.html">
+            
+                <a href="git-difftool.html">
+            
+                    
+                    git difftool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="git-fetch.html">
+            
+                <a href="git-fetch.html">
+            
+                    
+                    git fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="git-grep.html">
+            
+                <a href="git-grep.html">
+            
+                    
+                    git grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="git-lfs.html">
+            
+                <a href="git-lfs.html">
+            
+                    
+                    git lfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="git-log.html">
+            
+                <a href="git-log.html">
+            
+                    
+                    git log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="git-ls-files.html">
+            
+                <a href="git-ls-files.html">
+            
+                    
+                    git ls-files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="git-ls-tree.html">
+            
+                <a href="git-ls-tree.html">
+            
+                    
+                    git ls-tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.23" data-path="git-merge.html">
+            
+                <a href="git-merge.html">
+            
+                    
+                    git merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.24" data-path="git-mv.html">
+            
+                <a href="git-mv.html">
+            
+                    
+                    git mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.25" data-path="git-pull.html">
+            
+                <a href="git-pull.html">
+            
+                    
+                    git pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.26" data-path="git-push.html">
+            
+                <a href="git-push.html">
+            
+                    
+                    git push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.27" data-path="git-rebase.html">
+            
+                <a href="git-rebase.html">
+            
+                    
+                    git rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.28" data-path="git-reflog.html">
+            
+                <a href="git-reflog.html">
+            
+                    
+                    git reflog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.29" data-path="git-remote.html">
+            
+                <a href="git-remote.html">
+            
+                    
+                    git remote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.30" data-path="git-rerere.html">
+            
+                <a href="git-rerere.html">
+            
+                    
+                    git rerere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.31" data-path="git-reset.html">
+            
+                <a href="git-reset.html">
+            
+                    
+                    git reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.32" data-path="git-restore.html">
+            
+                <a href="git-restore.html">
+            
+                    
+                    git restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.33" data-path="git-revert.html">
+            
+                <a href="git-revert.html">
+            
+                    
+                    git revert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.34" data-path="git-rm.html">
+            
+                <a href="git-rm.html">
+            
+                    
+                    git rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.35" data-path="git-show-branch.html">
+            
+                <a href="git-show-branch.html">
+            
+                    
+                    git show-branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.36" data-path="git-show.html">
+            
+                <a href="git-show.html">
+            
+                    
+                    git show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.37" data-path="git-stash.html">
+            
+                <a href="git-stash.html">
+            
+                    
+                    git stash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.38" data-path="git-submodule.html">
+            
+                <a href="git-submodule.html">
+            
+                    
+                    git submodule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.39" data-path="git-tag.html">
+            
+                <a href="git-tag.html">
+            
+                    
+                    git tag
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../gui/git-gui.html">
+            
+                <a href="../gui/git-gui.html">
+            
+                    
+                    git gui
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../gui/gitk.html">
+            
+                <a href="../gui/gitk.html">
+            
+                    
+                    gitk
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GitHub</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../platforms/github/">
+            
+                <a href="../platforms/github/">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../platforms/github/api/">
+            
+                <a href="../platforms/github/api/">
+            
+                    
+                    api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../platforms/github/apps/">
+            
+                <a href="../platforms/github/apps/">
+            
+                    
+                    apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../platforms/github/badges.html">
+            
+                <a href="../platforms/github/badges.html">
+            
+                    
+                    GitHub badges
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../platforms/github/flow/">
+            
+                <a href="../platforms/github/flow/">
+            
+                    
+                    flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../platforms/github/git.io/">
+            
+                <a href="../platforms/github/git.io/">
+            
+                    
+                    git.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../platforms/github/hub/">
+            
+                <a href="../platforms/github/hub/">
+            
+                    
+                    hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="../platforms/github/marketplace/">
+            
+                <a href="../platforms/github/marketplace/">
+            
+                    
+                    marketplace
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.8.1" data-path="../platforms/github/marketplace/imgbot/">
+            
+                <a href="../platforms/github/marketplace/imgbot/">
+            
+                    
+                    imgbot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="../platforms/github/octoverse/">
+            
+                <a href="../platforms/github/octoverse/">
+            
+                    
+                    octoverse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="../platforms/github/pages/">
+            
+                <a href="../platforms/github/pages/">
+            
+                    
+                    pages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.10.1" data-path="../platforms/github/pages/config.html">
+            
+                <a href="../platforms/github/pages/config.html">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.2" data-path="../platforms/github/pages/domain.html">
+            
+                <a href="../platforms/github/pages/domain.html">
+            
+                    
+                    Github Pages 自定义域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.3" data-path="../platforms/github/pages/site.html">
+            
+                <a href="../platforms/github/pages/site.html">
+            
+                    
+                    Github Pages 站点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.4" data-path="../platforms/github/pages/theme.html">
+            
+                <a href="../platforms/github/pages/theme.html">
+            
+                    
+                    Theme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.5" data-path="../platforms/github/pages/theme/">
+            
+                <a href="../platforms/github/pages/theme/">
+            
+                    
+                    theme
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.10.5.1" data-path="../platforms/github/pages/theme/css.html">
+            
+                <a href="../platforms/github/pages/theme/css.html">
+            
+                    
+                    主题的 CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.5.2" data-path="../platforms/github/pages/theme/layout.html">
+            
+                <a href="../platforms/github/pages/theme/layout.html">
+            
+                    
+                    主题的 HTML 布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.6" data-path="../platforms/github/pages/workflow.html">
+            
+                <a href="../platforms/github/pages/workflow.html">
+            
+                    
+                    流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="../platforms/github/repository/">
+            
+                <a href="../platforms/github/repository/">
+            
+                    
+                    repository
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.11.1" data-path="../platforms/github/repository/doc/">
+            
+                <a href="../platforms/github/repository/doc/">
+            
+                    
+                    doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.2" data-path="../platforms/github/repository/fork/">
+            
+                <a href="../platforms/github/repository/fork/">
+            
+                    
+                    fork
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.11.2.1" data-path="../platforms/github/repository/fork/contribute.html">
+            
+                <a href="../platforms/github/repository/fork/contribute.html">
+            
+                    
+                    Github 贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.3" data-path="../platforms/github/repository/issue/">
+            
+                <a href="../platforms/github/repository/issue/">
+            
+                    
+                    issue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.11.3.1" data-path="../platforms/github/repository/issue/template.html">
+            
+                <a href="../platforms/github/repository/issue/template.html">
+            
+                    
+                    Github Issue 模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.4" data-path="../platforms/github/repository/pr/">
+            
+                <a href="../platforms/github/repository/pr/">
+            
+                    
+                    pr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.5" data-path="../platforms/github/repository/project/">
+            
+                <a href="../platforms/github/repository/project/">
+            
+                    
+                    project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.6" data-path="../platforms/github/repository/release/">
+            
+                <a href="../platforms/github/repository/release/">
+            
+                    
+                    release
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.7" data-path="../platforms/github/repository/wiki/">
+            
+                <a href="../platforms/github/repository/wiki/">
+            
+                    
+                    wiki
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="../platforms/github/topics/">
+            
+                <a href="../platforms/github/topics/">
+            
+                    
+                    topics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GitLab</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../platforms/gitlab/">
+            
+                <a href="../platforms/gitlab/">
+            
+                    
+                    GitLab
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../platforms/gitlab/pages.html">
+            
+                <a href="../platforms/gitlab/pages.html">
+            
+                    
+                    pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gogs</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../platforms/gogs/">
+            
+                <a href="../platforms/gogs/">
+            
+                    
+                    gogs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GitBook</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../platforms/gitbook/">
+            
+                <a href="../platforms/gitbook/">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../platforms/gitbook/cli/">
+            
+                <a href="../platforms/gitbook/cli/">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../platforms/gitbook/cli/cli/">
+            
+                <a href="../platforms/gitbook/cli/cli/">
+            
+                    
+                    cmds
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.3.1" data-path="../platforms/gitbook/cli/cli/gitbook-build.html">
+            
+                <a href="../platforms/gitbook/cli/cli/gitbook-build.html">
+            
+                    
+                    gitbook build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3.2" data-path="../platforms/gitbook/cli/cli/gitbook-serve.html">
+            
+                <a href="../platforms/gitbook/cli/cli/gitbook-serve.html">
+            
+                    
+                    gitbook serve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3.3" data-path="../platforms/gitbook/cli/quickstart.html">
+            
+                <a href="../platforms/gitbook/cli/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="../platforms/gitbook/domain.html">
+            
+                <a href="../platforms/gitbook/domain.html">
+            
+                    
+                    GitBook 自定义域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="../platforms/gitbook/domain/">
+            
+                <a href="../platforms/gitbook/domain/">
+            
+                    
+                    domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="../platforms/gitbook/gitbook-summary-generator.html">
+            
+                <a href="../platforms/gitbook/gitbook-summary-generator.html">
+            
+                    
+                    Gitbook Summary Generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.7" data-path="../platforms/gitbook/release.html">
+            
+                <a href="../platforms/gitbook/release.html">
+            
+                    
+                    发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.8" data-path="../platforms/gitbook/summary.html">
+            
+                <a href="../platforms/gitbook/summary.html">
+            
+                    
+                    GitBook SUMMARY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">misc</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../misc/binaryfile&textfile.html">
+            
+                <a href="../misc/binaryfile&textfile.html">
+            
+                    
+                    二进制文件 & 文本文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../misc/githug/">
+            
+                <a href="../misc/githug/">
+            
+                    
+                    githug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../misc/issues/git-error.html">
+            
+                <a href="../misc/issues/git-error.html">
+            
+                    
+                    Git 错误整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >git checkout</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="git-checkout">git checkout</h1>
+<p>&#x5207;&#x6362;&#x5206;&#x652F;&#x6216;&#x8FD8;&#x539F;&#x5DE5;&#x4F5C;&#x533A;&#x6587;&#x4EF6;</p>
+<h2 id="&#x7528;&#x6CD5;">&#x7528;&#x6CD5;</h2>
+<pre><code class="lang-sh">git checkout [-q] [<span class="hljs-_">-f</span>] [-m] [&lt;branch&gt;]
+git checkout [-q] [<span class="hljs-_">-f</span>] [-m] --detach [&lt;branch&gt;]
+git checkout [-q] [<span class="hljs-_">-f</span>] [-m] [--detach] &lt;commit&gt;
+git checkout [-q] [<span class="hljs-_">-f</span>] [-m] [[-b|-B|--orphan] &lt;new_branch&gt;] [&lt;start_point&gt;]
+git checkout [<span class="hljs-_">-f</span>|--ours|--theirs|-m|--conflict=&lt;style&gt;] [&lt;tree-ish&gt;] [--] &lt;paths&gt;...
+git checkout [&lt;tree-ish&gt;] [--] &lt;pathspec&gt;...
+git checkout (-p|--patch) [&lt;tree-ish&gt;] [--] [&lt;paths&gt;...] <span class="hljs-comment"># &#x8FD8;&#x539F;&#x5DE5;&#x4F5C;&#x533A;&#x6587;&#x4EF6;</span>
+</code></pre>
+<h2 id="&#x9009;&#x9879;">&#x9009;&#x9879;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-- [filename]</code></td>
+<td>&#x7528;&#x6682;&#x5B58;&#x533A;&#x6587;&#x4EF6;&#x8986;&#x76D6;&#x5DE5;&#x4F5C;&#x533A;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>&#x76F8;&#x5F53;&#x4E8E; <code>git add .</code> &#x7684;&#x53CD;&#x52A8;&#x4F5C;&#xFF0C;&#x53D6;&#x6D88;&#x6682;&#x5B58;&#x533A;&#x7684;&#x6240;&#x6709; add &#x5185;&#x5BB9;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x7528;&#x4F8B;">&#x7528;&#x4F8B;</h2>
+<ul>
+<li><code>git checkout -b omaster origin/master</code> // &#x57FA;&#x4E8E;&#x8FDC;&#x7A0B;&#x8FFD;&#x8E2A;&#x5206;&#x652F; origin/master &#x5EFA;&#x7ACB;&#x65B0;&#x5206;&#x652F; omaster&#xFF0C;&#x5E76;&#x5207;&#x6362;&#x5230;&#x65B0;&#x5206;&#x652F;</li>
+<li><code>git checkout -b feature 0cece20</code>      // &#x57FA;&#x4E8E; 0cece20 &#x63D0;&#x4EA4;&#x5EFA;&#x7ACB;&#x65B0;&#x5206;&#x652F; feature&#xFF0C;&#x5E76;&#x5207;&#x6362;&#x5230;&#x65B0;&#x5206;&#x652F;</li>
+</ul>
+<h2 id="&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;&#xFF08;detached-head&#xFF09;">&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;&#xFF08;Detached HEAD&#xFF09;</h2>
+<p><a href=".images/detached-head.png" data-lightbox="deee7810-d2eb-47e6-b70f-b1af2e7ba362" data-title="&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;"><img src=".images/detached-head.png" alt="&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;"></a></p>
+<p>&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;&#xFF0C;&#x5373; HEAD &#x6307;&#x9488;&#x6CA1;&#x6709;&#x6307;&#x5411;&#x5206;&#x652F;&#x5F15;&#x7528;&#xFF0C;&#x800C;&#x662F;&#x6307;&#x5411;&#xFF08;checkout&#xFF09;&#x4E86;&#x67D0;&#x4E2A;&#x5177;&#x4F53;&#x7684; commit &#x3002;</p>
+<p>&#x54EA;&#x4E9B;&#x64CD;&#x4F5C;&#x4F1A;&#x5BFC;&#x81F4;&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># 1</span>
+$ git checkout [commit_id]
+
+<span class="hljs-comment"># 2</span>
+$ git rebase
+</code></pre>
+<p>&#x5207;&#x6362;&#x5230; master &#x524D;&#x7684;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># &#x5F3A;&#x5236;&#x5C06; master &#x5206;&#x652F;&#x6267;&#x884C;&#x5934;&#x6307;&#x9488;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x5982;&#x679C; master &#x5206;&#x652F;&#x8FD8;&#x6709;&#x65B0;&#x63D0;&#x4EA4;&#x7684;&#x8BDD;&#x614E;&#x7528;&#xFF09;</span>
+$ git branch <span class="hljs-_">-f</span> master HEAD &amp;&amp; git checkout master
+</code></pre>
+<pre><code class="lang-sh"><span class="hljs-comment"># &#x4F7F;&#x7528;&#x65B0;&#x5206;&#x652F;&#x6765;&#x4FDD;&#x5B58;&#x5206;&#x79BB;&#x7684;&#x63D0;&#x4EA4;</span>
+$ git branch v001 [commit-id]
+</code></pre>
+<p>&#x5207;&#x6362;&#x5230; master &#x540E;&#x7684;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># &#x67E5;&#x770B;&#x6700;&#x8FD1;&#x7684;&#x63D0;&#x4EA4; ID&#xFF0C;&#x7136;&#x540E;&#x518D; checkout &#x56DE;&#x6765;&#xFF1B;&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x4E0D;&#x7BA1;&#x5B83;&#xFF0C;&#x8FC7;&#x6BB5;&#x65F6;&#x95F4;&#x4F1A;&#x4F5C;&#x4E3A;&#x5783;&#x573E;&#x56DE;&#x6536;&#x6389;</span>
+$ git reflog
+</code></pre>
+<h2 id="&#x5B9E;&#x9A8C;&#x4E00;-&#xB7;-&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;">&#x5B9E;&#x9A8C;&#x4E00; &#xB7; &#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;</h2>
+<pre><code class="lang-sh">git init e1 &amp;&amp; <span class="hljs-built_in">cd</span> e1/
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;print(&quot;Hello,world&quot;)&apos;</span> &gt; main.py
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;# Python Document&apos;</span> &gt; README.md
+
+git add main.py &amp;&amp; git commit -m <span class="hljs-string">&apos;Python Code&apos;</span>
+git add README.md &amp;&amp; git commit -m <span class="hljs-string">&apos;Python Document&apos;</span>
+</code></pre>
+<pre><code class="lang-sh"><span class="hljs-comment"># &#x63D0;&#x4EA4;&#x5386;&#x53F2;</span>
+$ git <span class="hljs-built_in">log</span> --oneline
+c155d2e (HEAD -&gt; master) Python Document
+9e89670 Python Code
+
+<span class="hljs-comment"># &#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;</span>
+$ git checkout 9e89670
+
+Note: checking out <span class="hljs-string">&apos;9e89670&apos;</span>.
+
+You are <span class="hljs-keyword">in</span> <span class="hljs-string">&apos;detached HEAD&apos;</span> state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make <span class="hljs-keyword">in</span> this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+<span class="hljs-keyword">do</span> so (now or later) by using -b with the checkout <span class="hljs-built_in">command</span> again. Example:
+
+  git checkout -b &lt;new-branch-name&gt;
+
+HEAD is now at 9e89670 Python Code
+</code></pre>
+<ul>
+<li>&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;&#x540E;&#x505A;&#x4E00;&#x4E9B;&#x63D0;&#x4EA4;</li>
+</ul>
+<pre><code class="lang-sh"><span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;# Test Code&quot;</span> &gt; test.py
+
+git add test.py &amp;&amp; git commit -m <span class="hljs-string">&quot;Test Code&quot;</span>
+</code></pre>
+<pre><code class="lang-sh">$ git branch
+* (HEAD detached from 9e89670)
+  master
+
+$ git <span class="hljs-built_in">log</span> --online
+57309b9 (HEAD) Test Code
+9e89670 Python Code
+
+$ git <span class="hljs-built_in">log</span> master --oneline
+c155d2e (master) Python Document
+9e89670 Python Code
+</code></pre>
+<ul>
+<li>&#x82E5;&#x6CA1;&#x6709;&#x6B64;&#x65F6;&#x8FD8;&#x672A;&#x7ED1;&#x5B9A;&#x5230;&#x5177;&#x4F53;&#x5206;&#x652F;</li>
+</ul>
+<pre><code class="lang-sh">$ git checkout -b fix-1
+</code></pre>
+<ul>
+<li>&#x5C1D;&#x8BD5;&#x5207;&#x6362;&#x5230; master &#x5206;&#x652F;</li>
+</ul>
+<pre><code class="lang-sh">$ git checkout master
+</code></pre>
+<p>&#x56E0;&#x6B64;&#xFF0C;<strong>&#x5207;&#x6362; HEAD &#x6700;&#x597D;&#x5728;&#x5206;&#x652F;&#x5F15;&#x7528;&#x4E4B;&#x95F4;</strong>&#xFF01;&#x597D;&#x7684;&#x4E00;&#x9762;&#x662F;&#xFF0C;&#x5206;&#x79BB;&#x5934;&#x6307;&#x9488;&#x53EF;&#x4EE5;&#x7528;&#x4F5C;&#x63D0;&#x4EA4;&#x5B9E;&#x9A8C;&#x3002;</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2019-2020 | CC BY-NC-SA 4.0 <br> &#x76F8;&#x5173;&#x7F51;&#x7AD9;: <a href="https://weplay.me" target="_blank">&#x77E5;&#x8BC6;&#x5E93;</a> <a href="https://weplay.me" target="_blank">&#x5FAE;&#x67B6;&#x6784;&#x5E08;</a> <a href="https://quickstarts.io" target="_blank">&#x5FEB;&#x901F;&#x5165;&#x95E8;</a> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x66F4;&#x65B0;&#x4E8E; 2020-02-21 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="git-cat-file.html" class="navigation navigation-prev " aria-label="Previous page: git cat-file">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="git-cherry-pick.html" class="navigation navigation-next " aria-label="Next page: git cherry-pick">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"git checkout","level":"5.9","depth":1,"next":{"title":"git cherry-pick","level":"5.10","depth":1,"path":"cli/git-cherry-pick.md","ref":"cli/git-cherry-pick.md","articles":[]},"previous":{"title":"git cat-file","level":"5.8","depth":1,"path":"cli/git-cat-file.md","ref":"cli/git-cat-file.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-fontsettings","-sharing","highlight","github","-lunr","-search","search-pro","github-buttons@2.1.0","ga","page-toc","splitter","favicon","sitemap-general","edit-link","lightbox","page-footer-ex"],"styles":{"website":".gitbook/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/jinsyin/git"},"page-footer-ex":{"copyright":"Copyright © 2019-2020 | CC BY-NC-SA 4.0 <br/> 相关网站: [知识库](https://weplay.me) [微架构师](https://weplay.me) [快速入门](https://quickstarts.io)","markdown":true,"update_format":"YYYY-MM-DD","update_label":"更新于"},"splitter":{},"search-pro":{},"page-toc":{"position":"top","selector":".markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"sitemap-general":{"prefix":"https://weplay.me/git/"},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"github-buttons":{"repo":"jinsyin/git","types":["star"],"size":"small"},"ga":{"configuration":"auto","token":"UA-12345678-1"},"edit-link":{"label":"编辑","base":"https://github.com/jinsyin/git/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jins Yin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Git 知识库","language":"zh-hans","links":{"sidebar":{"微架构师":"https://weplay.me","快速入门":"https://quickstarts.io"}},"gitbook":"*","description":"Git 知识库：命令行、配置、奇淫巧技"},"file":{"path":"cli/git-checkout.md","mtime":"2020-02-21T11:01:54.325Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-21T11:02:38.394Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+
+    </body>
+</html>
+

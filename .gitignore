@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# Editor
+.vscode
+
+# GitBook
+_book
+
+# Node.js (gitbook install)
+node_modules

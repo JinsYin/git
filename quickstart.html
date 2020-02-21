@@ -1,0 +1,2064 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>快速入门 · Git 知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jins Yin">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href=".gitbook/website.css">
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="basics/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    
+        <link rel="shortcut icon" href='favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"jinsyin/git","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://weplay.me" target="_blank" class="custom-link">微架构师</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://quickstarts.io" target="_blank" class="custom-link">快速入门</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础篇</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="basics/">
+            
+                <a href="basics/">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="basics/getting-started.html">
+            
+                <a href="basics/getting-started.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="basics/branch/">
+            
+                <a href="basics/branch/">
+            
+                    
+                    分支管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="basics/experiment.html">
+            
+                <a href="basics/experiment.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="basics/file-status.html">
+            
+                <a href="basics/file-status.html">
+            
+                    
+                    文件状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="basics/server/">
+            
+                <a href="basics/server/">
+            
+                    
+                    服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="basics/server/gitweb.html">
+            
+                <a href="basics/server/gitweb.html">
+            
+                    
+                    GitWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="basics/server/protocol.html">
+            
+                <a href="basics/server/protocol.html">
+            
+                    
+                    Git 协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="basics/server/setup.html">
+            
+                <a href="basics/server/setup.html">
+            
+                    
+                    搭建 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="basics/workflow.html">
+            
+                <a href="basics/workflow.html">
+            
+                    
+                    工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="basics/workflow/">
+            
+                <a href="basics/workflow/">
+            
+                    
+                    workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">底层原理</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="principle/lifecycle.html">
+            
+                <a href="principle/lifecycle.html">
+            
+                    
+                    文件生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="principle/protocol.html">
+            
+                <a href="principle/protocol.html">
+            
+                    
+                    传输协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="principle/object.html">
+            
+                <a href="principle/object.html">
+            
+                    
+                    Git 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="principle/refs.html">
+            
+                <a href="principle/refs.html">
+            
+                    
+                    Git 引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">配置文件</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="dotfiles/dotgit.html">
+            
+                <a href="dotfiles/dotgit.html">
+            
+                    
+                    .git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="dotfiles/dotgitattributes.html">
+            
+                <a href="dotfiles/dotgitattributes.html">
+            
+                    
+                    .gitattributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="dotfiles/dotgitconfig.html">
+            
+                <a href="dotfiles/dotgitconfig.html">
+            
+                    
+                    .gitconfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="dotfiles/dotgitignore.html">
+            
+                <a href="dotfiles/dotgitignore.html">
+            
+                    
+                    .gitignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">命令行</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="cli/git-help.html">
+            
+                <a href="cli/git-help.html">
+            
+                    
+                    git help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="cli/git-add.html">
+            
+                <a href="cli/git-add.html">
+            
+                    
+                    git add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="cli/git-apply.html">
+            
+                <a href="cli/git-apply.html">
+            
+                    
+                    git apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cli/git-archive.html">
+            
+                <a href="cli/git-archive.html">
+            
+                    
+                    git archive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="cli/git-bisect.html">
+            
+                <a href="cli/git-bisect.html">
+            
+                    
+                    git bisect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="cli/git-blame.html">
+            
+                <a href="cli/git-blame.html">
+            
+                    
+                    git blame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="cli/git-branch.html">
+            
+                <a href="cli/git-branch.html">
+            
+                    
+                    git branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="cli/git-cat-file.html">
+            
+                <a href="cli/git-cat-file.html">
+            
+                    
+                    git cat-file
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="cli/git-checkout.html">
+            
+                <a href="cli/git-checkout.html">
+            
+                    
+                    git checkout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="cli/git-cherry-pick.html">
+            
+                <a href="cli/git-cherry-pick.html">
+            
+                    
+                    git cherry-pick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="cli/git-clean.html">
+            
+                <a href="cli/git-clean.html">
+            
+                    
+                    git clean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="cli/git-clone.html">
+            
+                <a href="cli/git-clone.html">
+            
+                    
+                    git clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="cli/git-commit.html">
+            
+                <a href="cli/git-commit.html">
+            
+                    
+                    git commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="cli/git-config.html">
+            
+                <a href="cli/git-config.html">
+            
+                    
+                    git config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="cli/git-diff.html">
+            
+                <a href="cli/git-diff.html">
+            
+                    
+                    git diff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="cli/git-difftool.html">
+            
+                <a href="cli/git-difftool.html">
+            
+                    
+                    git difftool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="cli/git-fetch.html">
+            
+                <a href="cli/git-fetch.html">
+            
+                    
+                    git fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="cli/git-grep.html">
+            
+                <a href="cli/git-grep.html">
+            
+                    
+                    git grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="cli/git-lfs.html">
+            
+                <a href="cli/git-lfs.html">
+            
+                    
+                    git lfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="cli/git-log.html">
+            
+                <a href="cli/git-log.html">
+            
+                    
+                    git log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="cli/git-ls-files.html">
+            
+                <a href="cli/git-ls-files.html">
+            
+                    
+                    git ls-files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="cli/git-ls-tree.html">
+            
+                <a href="cli/git-ls-tree.html">
+            
+                    
+                    git ls-tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.23" data-path="cli/git-merge.html">
+            
+                <a href="cli/git-merge.html">
+            
+                    
+                    git merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.24" data-path="cli/git-mv.html">
+            
+                <a href="cli/git-mv.html">
+            
+                    
+                    git mv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.25" data-path="cli/git-pull.html">
+            
+                <a href="cli/git-pull.html">
+            
+                    
+                    git pull
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.26" data-path="cli/git-push.html">
+            
+                <a href="cli/git-push.html">
+            
+                    
+                    git push
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.27" data-path="cli/git-rebase.html">
+            
+                <a href="cli/git-rebase.html">
+            
+                    
+                    git rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.28" data-path="cli/git-reflog.html">
+            
+                <a href="cli/git-reflog.html">
+            
+                    
+                    git reflog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.29" data-path="cli/git-remote.html">
+            
+                <a href="cli/git-remote.html">
+            
+                    
+                    git remote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.30" data-path="cli/git-rerere.html">
+            
+                <a href="cli/git-rerere.html">
+            
+                    
+                    git rerere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.31" data-path="cli/git-reset.html">
+            
+                <a href="cli/git-reset.html">
+            
+                    
+                    git reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.32" data-path="cli/git-restore.html">
+            
+                <a href="cli/git-restore.html">
+            
+                    
+                    git restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.33" data-path="cli/git-revert.html">
+            
+                <a href="cli/git-revert.html">
+            
+                    
+                    git revert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.34" data-path="cli/git-rm.html">
+            
+                <a href="cli/git-rm.html">
+            
+                    
+                    git rm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.35" data-path="cli/git-show-branch.html">
+            
+                <a href="cli/git-show-branch.html">
+            
+                    
+                    git show-branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.36" data-path="cli/git-show.html">
+            
+                <a href="cli/git-show.html">
+            
+                    
+                    git show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.37" data-path="cli/git-stash.html">
+            
+                <a href="cli/git-stash.html">
+            
+                    
+                    git stash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.38" data-path="cli/git-submodule.html">
+            
+                <a href="cli/git-submodule.html">
+            
+                    
+                    git submodule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.39" data-path="cli/git-tag.html">
+            
+                <a href="cli/git-tag.html">
+            
+                    
+                    git tag
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GUI</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="gui/git-gui.html">
+            
+                <a href="gui/git-gui.html">
+            
+                    
+                    git gui
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="gui/gitk.html">
+            
+                <a href="gui/gitk.html">
+            
+                    
+                    gitk
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GitHub</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="platforms/github/">
+            
+                <a href="platforms/github/">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="platforms/github/api/">
+            
+                <a href="platforms/github/api/">
+            
+                    
+                    api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="platforms/github/apps/">
+            
+                <a href="platforms/github/apps/">
+            
+                    
+                    apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="platforms/github/badges.html">
+            
+                <a href="platforms/github/badges.html">
+            
+                    
+                    GitHub badges
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="platforms/github/flow/">
+            
+                <a href="platforms/github/flow/">
+            
+                    
+                    flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="platforms/github/git.io/">
+            
+                <a href="platforms/github/git.io/">
+            
+                    
+                    git.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="platforms/github/hub/">
+            
+                <a href="platforms/github/hub/">
+            
+                    
+                    hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="platforms/github/marketplace/">
+            
+                <a href="platforms/github/marketplace/">
+            
+                    
+                    marketplace
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.8.1" data-path="platforms/github/marketplace/imgbot/">
+            
+                <a href="platforms/github/marketplace/imgbot/">
+            
+                    
+                    imgbot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="platforms/github/octoverse/">
+            
+                <a href="platforms/github/octoverse/">
+            
+                    
+                    octoverse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="platforms/github/pages/">
+            
+                <a href="platforms/github/pages/">
+            
+                    
+                    pages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.10.1" data-path="platforms/github/pages/config.html">
+            
+                <a href="platforms/github/pages/config.html">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.2" data-path="platforms/github/pages/domain.html">
+            
+                <a href="platforms/github/pages/domain.html">
+            
+                    
+                    Github Pages 自定义域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.3" data-path="platforms/github/pages/site.html">
+            
+                <a href="platforms/github/pages/site.html">
+            
+                    
+                    Github Pages 站点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.4" data-path="platforms/github/pages/theme.html">
+            
+                <a href="platforms/github/pages/theme.html">
+            
+                    
+                    Theme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.5" data-path="platforms/github/pages/theme/">
+            
+                <a href="platforms/github/pages/theme/">
+            
+                    
+                    theme
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.10.5.1" data-path="platforms/github/pages/theme/css.html">
+            
+                <a href="platforms/github/pages/theme/css.html">
+            
+                    
+                    主题的 CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.5.2" data-path="platforms/github/pages/theme/layout.html">
+            
+                <a href="platforms/github/pages/theme/layout.html">
+            
+                    
+                    主题的 HTML 布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10.6" data-path="platforms/github/pages/workflow.html">
+            
+                <a href="platforms/github/pages/workflow.html">
+            
+                    
+                    流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="platforms/github/repository/">
+            
+                <a href="platforms/github/repository/">
+            
+                    
+                    repository
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.11.1" data-path="platforms/github/repository/doc/">
+            
+                <a href="platforms/github/repository/doc/">
+            
+                    
+                    doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.2" data-path="platforms/github/repository/fork/">
+            
+                <a href="platforms/github/repository/fork/">
+            
+                    
+                    fork
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.11.2.1" data-path="platforms/github/repository/fork/contribute.html">
+            
+                <a href="platforms/github/repository/fork/contribute.html">
+            
+                    
+                    Github 贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.3" data-path="platforms/github/repository/issue/">
+            
+                <a href="platforms/github/repository/issue/">
+            
+                    
+                    issue
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.11.3.1" data-path="platforms/github/repository/issue/template.html">
+            
+                <a href="platforms/github/repository/issue/template.html">
+            
+                    
+                    Github Issue 模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.4" data-path="platforms/github/repository/pr/">
+            
+                <a href="platforms/github/repository/pr/">
+            
+                    
+                    pr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.5" data-path="platforms/github/repository/project/">
+            
+                <a href="platforms/github/repository/project/">
+            
+                    
+                    project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.6" data-path="platforms/github/repository/release/">
+            
+                <a href="platforms/github/repository/release/">
+            
+                    
+                    release
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11.7" data-path="platforms/github/repository/wiki/">
+            
+                <a href="platforms/github/repository/wiki/">
+            
+                    
+                    wiki
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="platforms/github/topics/">
+            
+                <a href="platforms/github/topics/">
+            
+                    
+                    topics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GitLab</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="platforms/gitlab/">
+            
+                <a href="platforms/gitlab/">
+            
+                    
+                    GitLab
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="platforms/gitlab/pages.html">
+            
+                <a href="platforms/gitlab/pages.html">
+            
+                    
+                    pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Gogs</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="platforms/gogs/">
+            
+                <a href="platforms/gogs/">
+            
+                    
+                    gogs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">GitBook</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="platforms/gitbook/">
+            
+                <a href="platforms/gitbook/">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="platforms/gitbook/cli/">
+            
+                <a href="platforms/gitbook/cli/">
+            
+                    
+                    cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="platforms/gitbook/cli/cli/">
+            
+                <a href="platforms/gitbook/cli/cli/">
+            
+                    
+                    cmds
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.3.1" data-path="platforms/gitbook/cli/cli/gitbook-build.html">
+            
+                <a href="platforms/gitbook/cli/cli/gitbook-build.html">
+            
+                    
+                    gitbook build
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3.2" data-path="platforms/gitbook/cli/cli/gitbook-serve.html">
+            
+                <a href="platforms/gitbook/cli/cli/gitbook-serve.html">
+            
+                    
+                    gitbook serve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3.3" data-path="platforms/gitbook/cli/quickstart.html">
+            
+                <a href="platforms/gitbook/cli/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="platforms/gitbook/domain.html">
+            
+                <a href="platforms/gitbook/domain.html">
+            
+                    
+                    GitBook 自定义域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="platforms/gitbook/domain/">
+            
+                <a href="platforms/gitbook/domain/">
+            
+                    
+                    domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="platforms/gitbook/gitbook-summary-generator.html">
+            
+                <a href="platforms/gitbook/gitbook-summary-generator.html">
+            
+                    
+                    Gitbook Summary Generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.7" data-path="platforms/gitbook/release.html">
+            
+                <a href="platforms/gitbook/release.html">
+            
+                    
+                    发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.8" data-path="platforms/gitbook/summary.html">
+            
+                <a href="platforms/gitbook/summary.html">
+            
+                    
+                    GitBook SUMMARY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">misc</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="misc/binaryfile&textfile.html">
+            
+                <a href="misc/binaryfile&textfile.html">
+            
+                    
+                    二进制文件 & 文本文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="misc/githug/">
+            
+                <a href="misc/githug/">
+            
+                    
+                    githug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="misc/issues/git-error.html">
+            
+                <a href="misc/issues/git-error.html">
+            
+                    
+                    Git 错误整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >快速入门</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5165;&#x95E8;">&#x5165;&#x95E8;</h1>
+<h2 id="&#x521B;&#x5EFA;-git-&#x4ED3;&#x5E93;">&#x521B;&#x5EFA; Git &#x4ED3;&#x5E93;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5C06;&#x5DF2;&#x6709;&#x9879;&#x76EE;&#x7EB3;&#x5165; Git &#x7BA1;&#x7406;</span>
+$ <span class="hljs-built_in">cd</span> myproject/ &amp;&amp; git init
+
+<span class="hljs-comment"># &#x65B0;&#x9879;&#x76EE;&#x4F7F;&#x7528; Git &#x7BA1;&#x7406;</span>
+$ git init newproject &amp;&amp; <span class="hljs-built_in">cd</span> newproject
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x5728;&#x5F53;&#x524D;&#x9879;&#x76EE;&#x4E0B;&#x81EA;&#x52A8;&#x751F;&#x6210; <code>.git</code> &#x76EE;&#x5F55;&#x53CA;&#x76F8;&#x5173;&#x5B50;&#x6587;&#x4EF6;&#x3002;</p>
+<h2 id="&#x628A;&#x5DE5;&#x4F5C;&#x533A;&#x6587;&#x4EF6;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#xFF08;&#x5F53;&#x524D;&#x5206;&#x652F;&#xFF09;">&#x628A;&#x5DE5;&#x4F5C;&#x533A;&#x6587;&#x4EF6;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#xFF08;&#x5F53;&#x524D;&#x5206;&#x652F;&#xFF09;</h2>
+<p>HEAD &#x6307;&#x5411;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;
+<a href=".images/git-add-commit.jpg" data-lightbox="c7d49329-409c-4da2-8915-9a5031e29f01" data-title=" *-commit"><img src=".images/git-add-commit.jpg" alt=" *-commit"></a></p>
+<blockquote>
+<p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013745374151782eb658c5a5ca454eaa451661275886c6000" target="_blank">&#x56FE;&#x7247;&#x6765;&#x6E90;</a></p>
+</blockquote>
+<p>&#x6682;&#x5B58;&#x533A;&#x5C31;&#x50CF;&#x662F;&#x8D2D;&#x7269;&#x8F66;&#xFF0C;&#x770B;&#x5230;&#x559C;&#x6B22;&#x7684;&#x5546;&#x54C1;&#x53EF;&#x4EE5;&#x5148;&#x52A0;&#x5165;&#x8D2D;&#x7269;&#x8F66;&#xFF08;git add&#xFF09;&#xFF0C;&#x5728;&#x6CA1;&#x4ED8;&#x6B3E;&#x524D;&#x5176;&#x5B9E;&#x4F60;&#x662F;&#x4E0D;&#x786E;&#x5B9A;&#x8D2D;&#x7269;&#x8F66;&#x91CC;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x60F3;&#x4E70;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x8981;&#x4E86;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5220;&#x9664;&#x8D2D;&#x7269;&#x8F66;&#x91CC;&#x7684;&#x5546;&#x54C1;&#xFF08;git reset&#xFF09;&#xFF0C;&#x786E;&#x5B9A;&#x597D;&#x540E;&#x518D;&#x4E00;&#x6B21;&#x6027;&#x4E0B;&#x5355;&#xFF08;git commit&#xFF09;; &#x5F53;&#x7136;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x80FD;&#x770B;&#x5230;&#x67D0;&#x4E2A;&#x559C;&#x6B22;&#x7684;&#x5546;&#x54C1;&#x5C31;&#x76F4;&#x63A5;&#x4E0B;&#x5355;&#x4E86;&#xFF08;git commit -a&#xFF09;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5148;&#x52A0;&#x5165;&#x8D2D;&#x7269;&#x8F66;&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Git is a version control system.&quot;</span> &gt; README.md
+$ git add README.md
+$ git commit -m <span class="hljs-string">&quot;Create README.md&quot;</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># Git &#x6DFB;&#x52A0;&#x6587;&#x4EF6;&#x5230;&#x4ED3;&#x5E93;&#x9700;&#x8981; add&#xFF0C;commit &#x4E24;&#x6B65;&#xFF0C;&#x53EF;&#x4EE5;&#x591A;&#x6B21; add &#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#xFF0C;commit &#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x5F88;&#x591A;&#x6587;&#x4EF6;</span>
+$ git add f1.md
+$ git add f2.md f3.md
+$ git add dir1
+$ git add dir2 dir3
+$ git commit -m <span class="hljs-string">&quot;Add three files and one dirctory.&quot;</span> <span class="hljs-comment"># &#x63D0;&#x4EA4;&#x6682;&#x5B58;&#x533A;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x7248;&#x672C;&#x5E93;</span>
+$ git commit [file1] [file2] ... -m [message] <span class="hljs-comment"># &#x63D0;&#x4EA4;&#x6682;&#x5B58;&#x533A;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5230;&#x7248;&#x672C;&#x5E93;</span>
+</code></pre>
+<h2 id="&#x5173;&#x4E8E;-git-add">&#x5173;&#x4E8E; git add</h2>
+<pre><code class="lang-bash">$ git add -A <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x6240;&#x6709;&#x6539;&#x52A8;&#xFF0C;&#x5305;&#x62EC;&#x6240;&#x6709;&#x65B0;&#x589E;&#x3001;&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#xFF1B;&#x7B49;&#x4EF7;&#x4E8E; git add --all&#xFF0C;&#x53EF;&#x4EE5;&#x53EA;&#x9488;&#x5BF9;&#x76EE;&#x5F55;&#xFF1A; git add --all /dir</span>
+$ git add .  <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x6240;&#x6709;&#x65B0;&#x589E;&#x548C;&#x4FEE;&#x6539;&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x62EC;&#x5220;&#x9664; &#xFF08;&#x4F1A;&#x6DFB;&#x52A0;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#xFF09;</span>
+$ git add *  <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x6240;&#x6709;&#x65B0;&#x589E;&#x548C;&#x4FEE;&#x6539;&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x62EC;&#x5220;&#x9664; &#xFF08;&#x4E0D;&#x4F1A;&#x6DFB;&#x52A0;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#xFF09;</span>
+$ git add -u <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x62EC;&#x65B0;&#x589E;</span>
+</code></pre>
+<h2 id="&#x4EE3;&#x7801;&#x63D0;&#x4EA4;">&#x4EE3;&#x7801;&#x63D0;&#x4EA4;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x4E0D; add&#xFF0C;&#x76F4;&#x63A5;&#x63D0;&#x4EA4;&#x5DE5;&#x4F5C;&#x533A;&#x81EA;&#x4E0A;&#x6B21; commit &#x540E;&#x7684;&#x65B0;&#x7684;&#x53D8;&#x5316;&#x5230;&#x7248;&#x672C;&#x4ED3;&#x5E93;</span>
+$ git commit <span class="hljs-_">-a</span> -m <span class="hljs-string">&quot;msg&quot;</span> <span class="hljs-comment"># &#x7B49;&#x4EF7;&#x4E8E; git add * &amp;&amp; git commit -m &quot;msg&quot; &#xFF08;&#x5E76;&#x4E0D;&#x4F1A;&#x6DFB;&#x52A0;&#x9690;&#x85CF;&#x6587;&#x4EF6;&#xFF09;</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x4F7F;&#x7528;&#x65B0;&#x7684;&#x63D0;&#x4EA4;&#x4EE3;&#x66FF;&#x4E0A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4FEE;&#x6539;&#x4E0A;&#x4E00;&#x6B21;&#x7684;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;</span>
+$ git commit --amend -m [message]
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x91CD;&#x505A;&#x4E0A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x5E76;&#x5305;&#x62EC;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x65B0;&#x53D8;&#x5316;</span>
+$ git commit --amend [file1] ... [fileN] -m [message]
+</code></pre>
+<h2 id="&#x64A4;&#x9500;&#xFF08;unstage&#xFF09;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4FEE;&#x6539;&#xFF1F;">&#x64A4;&#x9500;&#xFF08;unstage&#xFF09;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4FEE;&#x6539;&#xFF1F;</h2>
+<p>&#x64A4;&#x9500;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x4E4B;&#x540E;&#xFF0C;&#x6682;&#x5B58;&#x533A;&#x9ED8;&#x8BA4;&#x4F1A;&#x56DE;&#x5230;&#x6700;&#x8FD1;&#x4E00;&#x6B21; commit &#x7684;&#x72B6;&#x6001;</p>
+<pre><code class="lang-bash">$ git reset HEAD f1.md <span class="hljs-comment"># &#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210; git reset f1.md</span>
+$ git reset <span class="hljs-comment"># &#x64A4;&#x9500;&#x6240;&#x6709;&#x6682;&#x5B58;&#x533A;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x8FFD;&#x8E2A;</span>
+</code></pre>
+<h2 id="add-&#x5230;&#x6682;&#x5B58;&#x533A;&#x540E;&#x5982;&#x4F55;&#x6539;&#x540D;">add &#x5230;&#x6682;&#x5B58;&#x533A;&#x540E;&#x5982;&#x4F55;&#x6539;&#x540D;</h2>
+<pre><code class="lang-bash">$ git mv new.md old.md <span class="hljs-comment"># &#x5DE5;&#x4F5C;&#x533A;&#x4E5F;&#x4F1A;&#x8DDF;&#x7740;&#x6539;&#x540D;</span>
+</code></pre>
+<h2 id="add-&#x5230;&#x6682;&#x5B58;&#x533A;&#x540E;&#x5982;&#x4F55;&#x5220;&#x9664;&#xFF1F;">add &#x5230;&#x6682;&#x5B58;&#x533A;&#x540E;&#x5982;&#x4F55;&#x5220;&#x9664;&#xFF1F;</h2>
+<p>&#x5220;&#x9664;&#x6682;&#x5B58;&#x533A;&#x4E2D;&#x6587;&#x4EF6;&#x76F8;&#x5F53;&#x4E8E;&#x4ECE;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#x5220;&#x9664;&#x6DFB;&#x52A0;&#x7684;&#x5546;&#x54C1;. &#x53E6;&#x5916;,&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x88AB;&#x63D0;&#x4EA4;&#x5230;&#x4E86;&#x7248;&#x672C;&#x5E93;, &#x7A81;&#x7136;&#x53C8;&#x4E0D;&#x60F3;&#x63D0;&#x4EA4;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;,&#x53EF;&#x4EE5;&#x5148;&#x4ECE;&#x6682;&#x5B58;&#x533A;&#x5220;&#x9664;&#x518D;&#x91CD;&#x65B0;&#x63D0;&#x4EA4;&#x5230;&#x7248;&#x672C;&#x5E93;.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x540C;&#x65F6;&#x5220;&#x9664;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x4E2D;&#x7684; f1.md</span>
+$ git rm (<span class="hljs-_">-f</span>) f1.md <span class="hljs-comment"># &#x7B49;&#x4EF7;&#x4E8E; git rm (-f) f1.md &amp;&amp; git rm --cached f1.md</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x4EC5;&#x5220;&#x9664;&#x6682;&#x5B58;&#x533A;&#x4E2D;&#x7684; f1.md&#xFF0C;&#x800C;&#x5DE5;&#x4F5C;&#x533A;&#x4E2D;&#x7684; f1.md &#x4F1A;&#x7EE7;&#x7EED;&#x4FDD;&#x7559;</span>
+<span class="hljs-comment"># &#x5982;&#x679C;&#x5220;&#x9664;&#x524D;&#x5DE5;&#x4F5C;&#x533A;&#x4E2D;&#x7684; f1.md &#x8FD8;&#x4F5C;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5148;&#x4E22;&#x5F03;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4FEE;&#x6539; git checkout -- f1.md</span>
+$ git rm --cached f1.md
+$ git rm -r --cached dir <span class="hljs-comment"># &#x4ECE;&#x6682;&#x5B58;&#x533A;&#x5220;&#x9664;&#x67D0;&#x4E2A;&#x76EE;&#x5F55;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x5220;&#x9519;&#x4E86;&#x53EF;&#x4EE5;&#x518D;&#x4E22;&#x5F03;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4FEE;&#x6539;&#xFF08;git checkout -- f1.md&#xFF09;&#x3002;</p>
+<h2 id="&#x4E22;&#x5F03;&#xFF08;discard&#xFF09;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4FEE;&#x6539;">&#x4E22;&#x5F03;&#xFF08;discard&#xFF09;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4FEE;&#x6539;</h2>
+<p>&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x6587;&#x4EF6;&#x53D1;&#x751F;&#x4FEE;&#x6539;&#x540E;&#xFF0C;&#x8981;&#x4E48;<code>&#x6DFB;&#x52A0;</code>&#xFF08;git add f1.md&#xFF09;&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x8981;&#x4E48;<code>&#x4E22;&#x5F03;</code>&#xFF08;git checkout -- f1.md&#xFF09;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x60C5;&#x51B5;1&#xFF1A;f1.md &#x4F5C;&#x4E86;&#x4FEE;&#x6539;&#x4F46;&#x8FD8;&#x6CA1;&#x6709;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x64A4;&#x9500;&#x4FEE;&#x6539;&#x4F1A;&#x56DE;&#x5230;&#x548C;&#x7248;&#x672C;&#x5E93;&#x6700;&#x8FD1;&#x4E00;&#x6B21; commit &#x7684;&#x72B6;&#x6001;&#xFF08;&#x524D;&#x63D0;&#x662F;&#x81F3;&#x5C11; commit &#x8FC7;&#x4E00;&#x6B21;&#xFF09;<br>&#x60C5;&#x51B5;2&#xFF1A;f1.md &#x4F5C;&#x4E86;&#x7B2C;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#x540E;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF0C;&#x4E4B;&#x540E;&#x53C8;&#x4F5C;&#x4E86;&#x7B2C;&#x4E8C;&#x6B21;&#x4FEE;&#x6539;&#xFF0C;&#x64A4;&#x9500;&#x4FEE;&#x6539;&#x4F1A;&#x56DE;&#x5230;&#x6682;&#x5B58;&#x533A;&#x65F6;&#x7684;&#x72B6;&#x6001;&#x3002;&#x5982;&#x679C;&#x60F3;&#x56DE;&#x5230;&#x7248;&#x672C;&#x5E93;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A; commit id&#x3002;  </p>
+<p>&#x603B;&#x4E4B;&#xFF0C;&#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x4F1A;&#x56DE;&#x5230;&#x6700;&#x8FD1;&#x8FD1;&#x4E00;&#x6B21;<code>git commit</code>&#x6216;<code>git add</code>&#x65F6;&#x7684;&#x72B6;&#x6001;</p>
+<pre><code class="lang-bash">$ git status
+$ git checkout -- f1.md <span class="hljs-comment"># &#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;</span>
+$ git checkout . <span class="hljs-comment"># &#x64A4;&#x9500;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x6240;&#x6709;&#x4FEE;&#x6539;</span>
+$ git checkout HEAD f1.md <span class="hljs-comment"># &#x76F4;&#x63A5;&#x56DE;&#x5230;&#x7248;&#x672C;&#x5E93;&#x72B6;&#x6001;&#xFF08;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x90FD;&#x4F1A;&#x56DE;&#x5230;&#x7248;&#x672C;&#x5E93;&#x72B6;&#x6001;&#xFF09;</span>
+$ git status
+</code></pre>
+<h2 id="&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x533A;&#x4EE5;&#x53CA;&#x6682;&#x5B58;&#x533A;&#x7684;&#x72B6;&#x6001;">&#x67E5;&#x770B;<code>&#x5DE5;&#x4F5C;&#x533A;</code>&#x4EE5;&#x53CA;<code>&#x6682;&#x5B58;&#x533A;</code>&#x7684;&#x72B6;&#x6001;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x6709;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x88AB;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x4FEE;&#x6539;&#xFF08;&#x4F46;&#x4E0D;&#x80FD;&#x67E5;&#x770B;&#x5177;&#x4F53;&#x4FEE;&#x6539;&#x4E86;&#x4EC0;&#x4E48;&#x5185;&#x5BB9;&#xFF09;</span>
+$ git status
+</code></pre>
+<h2 id="&#x67E5;&#x770B;-difference">&#x67E5;&#x770B; difference</h2>
+<p>&#x67E5;&#x770B;&#x6587;&#x672C;&#x5728;<code>&#x5DE5;&#x4F5C;&#x533A;</code>&#x548C;<code>&#x6682;&#x5B58;&#x533A;</code>&#x7684; difference</p>
+<pre><code class="lang-bash">$ git diff <span class="hljs-comment"># &#x5BF9;&#x6BD4;&#x6240;&#x6709;&#x6587;&#x4EF6; &#xFF08;git diff --shortstat&#xFF09;</span>
+$ git diff README.md <span class="hljs-comment"># &#x5BF9;&#x6BD4;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;</span>
+</code></pre>
+<p>&#x67E5;&#x770B;&#x6587;&#x672C;&#x5728;<code>&#x6682;&#x5B58;&#x533A;</code>&#x548C;<code>&#x672C;&#x5730;&#x4ED3;&#x5E93;</code>&#x7684; difference
+&#x5BF9;&#x6BD4;&#x7684;&#x662F;&#x6682;&#x5B58;&#x533A;&#x548C;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x7684;&#x6700;&#x8FD1;&#x4E00;&#x6B21; commit &#x7684;&#x4E0D;&#x540C;</p>
+<pre><code class="lang-bash">$ git diff --cached <span class="hljs-comment"># &#x5BF9;&#x6BD4;&#x6240;&#x6709;&#x6587;&#x4EF6;&#xFF08;&#x7B49;&#x4EF7;&#x4E8E; git diff --staged&#xFF09;</span>
+$ git diff --cached README.md <span class="hljs-comment"># &#x5BF9;&#x6BD4;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;</span>
+</code></pre>
+<p>&#x67E5;&#x770B;&#x6587;&#x672C;&#x5728;<code>&#x5DE5;&#x4F5C;&#x533A;</code>&#x548C;<code>&#x672C;&#x5730;&#x4ED3;&#x5E93;</code>&#x7684; difference</p>
+<pre><code class="lang-bash">$ git diff HEAD <span class="hljs-comment"># &#x5BF9;&#x6BD4;&#x6240;&#x6709;&#x6587;&#x4EF6;</span>
+$ git diff HEAD -- README.md <span class="hljs-comment"># &#x5BF9;&#x6BD4;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;</span>
+$ git diff <span class="hljs-built_in">test</span> <span class="hljs-comment"># &#x5BF9;&#x6BD4;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0E; test &#x5206;&#x652F;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x5EF6;&#x4F38;&#xFF1A; git diff master &#x7B49;&#x4EF7;&#x4E8E; git diff HEAD</span>
+</code></pre>
+<p>&#x67E5;&#x770B;&#x6587;&#x672C;&#x5728;<code>&#x7248;&#x672C;&#x5E93;</code>&#x548C;<code>&#x7248;&#x672C;&#x5E93;</code>&#x7684; difference</p>
+<pre><code class="lang-bash">$ git diff HEAD^ HEAD <span class="hljs-comment"># &#x6BD4;&#x8F83;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x63D0;&#x4EA4; commit &#x548C;&#x4E0A;&#x6B21;&#x63D0;&#x4EA4;</span>
+$ git diff SHA1 SHA2 <span class="hljs-comment"># &#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5386;&#x53F2;&#x7248;&#x672C;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;</span>
+</code></pre>
+<p>&#x5BF9;&#x6BD4;&#x5206;&#x652F;&#x7684; difference</p>
+<pre><code class="lang-bash">$ git diff master dev <span class="hljs-comment"># &#x5BF9;&#x6BD4; dev &#x5206;&#x652F;&#x548C; master &#x5206;&#x652F;&#x6700;&#x8FD1;&#x4E00;&#x6B21; commit &#x65F6;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x7684;&#x4E0D;&#x540C; &#xFF08;dev &#x5206;&#x652F;&#x76F8;&#x5BF9;&#x4E8E; master &#x5206;&#x652F;&#xFF09;</span>
+$ git diff master dev &gt; master-dev.diff <span class="hljs-comment"># &#x5C06;&#x6240;&#x6709; difference &#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x8F93;&#x51FA;&#x81EA; dev &#x548C; master &#x5206;&#x522B;&#x5F00;&#x53D1;&#x4EE5;&#x6765;&#xFF0C;dev &#x5206;&#x652F;&#x4E0A;&#x7684; changed</span>
+$ git diff master...dev
+</code></pre>
+<p>&#x67E5;&#x770B;&#x7B80;&#x5355;&#x7684; diff &#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x52A0;&#x4E0A; --stat &#x53C2;&#x6570;</p>
+<pre><code class="lang-bash">$ git diff --stat
+$ git diff --cached --stat
+...
+$ git diff master...dev --stat
+</code></pre>
+<h2 id="&#x67E5;&#x770B;-commit-&#x65E5;&#x5FD7;">&#x67E5;&#x770B; commit &#x65E5;&#x5FD7;</h2>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x7B2C;&#x4E00;&#x5217;&#x4E3A; commit id</span>
+$ git <span class="hljs-built_in">log</span>
+$ git <span class="hljs-built_in">log</span> --pretty=oneline <span class="hljs-comment"># &#x4E00;&#x884C;&#x663E;&#x793A;</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x6700;&#x65B0;&#x7684;3&#x6761; commit &#x65E5;&#x5FD7;</span>
+$ git <span class="hljs-built_in">log</span> -3
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5EFA;&#x8BAE;&#x4F7F;&#x7528; git lg &#x4EE3;&#x66FF; git log</span>
+$ git <span class="hljs-built_in">log</span> dev <span class="hljs-comment"># &#x67E5;&#x770B; dev &#x5206;&#x652F;&#x7684; commit &#x65E5;&#x5FD7;</span>
+$ git <span class="hljs-built_in">log</span> master dev <span class="hljs-comment"># &#x67E5;&#x770B; master &#x5206;&#x652F;&#x548C; dev &#x5206;&#x652F;&#x7684; commit &#x65E5;&#x5FD7;</span>
+$ git <span class="hljs-built_in">log</span> master ^dev <span class="hljs-comment"># &#x67E5;&#x770B; master &#x5206;&#x652F;&#x6709;&#xFF0C;&#x800C; dev &#x5206;&#x652F;&#x6CA1;&#x6709;&#x7684; commit &#x65E5;&#x5FD7;&#xFF08;&#x5BF9;&#x5E94;&#xFF1A;git log dev ^master&#xFF09;</span>
+$ git <span class="hljs-built_in">log</span> master..dev <span class="hljs-comment"># &#x67E5;&#x770B; dev &#x5206;&#x652F;&#x6BD4; master &#x5206;&#x652F;&#x591A;&#x63D0;&#x4EA4;&#x4E86;&#x54EA;&#x4E9B;&#x5185;&#x5BB9;&#xFF08;&#x5BF9;&#x5E94;&#xFF1A;git log master ^dev&#xFF09;</span>
+$ git <span class="hljs-built_in">log</span> master...dev <span class="hljs-comment"># &#x4E0D;&#x786E;&#x5B9A;&#x8C01;&#x63D0;&#x4EA4;&#x7684;&#x591A;&#x8C01;&#x63D0;&#x4EA4;&#x7684;&#x5C11;&#xFF0C;&#x5355;&#x7EAF;&#x60F3;&#x770B;&#x770B;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x4E00;&#x6837;&#xFF08;&#x7B49;&#x540C;&#x4E8E; git log dev...master&#xFF09;</span>
+$ git <span class="hljs-built_in">log</span> --left-right master...dev <span class="hljs-comment"># &#x67E5;&#x770B;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x90FD;&#x5728;&#x54EA;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#xFF08;master &#x5BF9;&#x5E94;&#x5DE6;&#x7BAD;&#x5934; &lt;&#xFF0C;dev &#x5BF9;&#x5E94;&#x53F3;&#x7BAD;&#x5934; &gt;&#xFF09;</span>
+</code></pre>
+<hr>
+<h2 id="&#x7248;&#x672C;&#x56DE;&#x9000;">&#x7248;&#x672C;&#x56DE;&#x9000;</h2>
+<p>HEAD &#x6307;&#x5411;&#x7684;&#x662F;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF0C;HEAD^ &#x6307;&#x5411;&#x7684;&#x662F;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x4E0A;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF0C;HEAD~10 &#x6307;&#x5411;&#x7684;&#x662F;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x4E0A; 100 &#x4E2A;&#x7248;&#x672C;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x6309; commit id &#x6765;&#x56DE;&#x9000;&#x7248;&#x672C;</span>
+$ git reset --hard HEAD^ <span class="hljs-comment"># &#x56DE;&#x9000;&#x5230;&#x4E0A;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x4F1A;&#x88AB;&#x91CD;&#x7F6E;&#x5230;&#x56DE;&#x9000;&#x7248;&#x672C;&#x7684;&#x72B6;&#x6001;</span>
+$ git reset --keep HEAD^ <span class="hljs-comment"># &#x4EC5;&#x7248;&#x672C;&#x5E93;&#x56DE;&#x9000;&#xFF0C;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x4E0D;&#x53D8;</span>
+$ git revert [commit] <span class="hljs-comment"># &#x56DE;&#x9000;&#x5230;&#x6307;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; commit&#xFF0C;&#x4F46;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x8D5E;&#x5B58;&#x672C;&#x5730;&#x4FEE;&#x6539;&#xFF08;git stash&#xFF09;</span>
+</code></pre>
+<h2 id="&#x67E5;&#x770B;-commit-&#x65E5;&#x5FD7;&#x548C;&#x7248;&#x672C;&#x56DE;&#x9000;&#x65E5;&#x5FD7;">&#x67E5;&#x770B; commit &#x65E5;&#x5FD7;&#x548C;&#x7248;&#x672C;&#x56DE;&#x9000;&#x65E5;&#x5FD7;</h2>
+<p>&#x5982;&#x679C;&#x7248;&#x672C;&#x56DE;&#x9000;&#x4E4B;&#x540E;&#x53C8;&#x60F3;&#x56DE;&#x5230;&#x672A;&#x6765;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x8BE5;&#x547D;&#x4EE4;&#x83B7;&#x53D6;&#x56DE;&#x9000;&#x524D;&#x7684; commit id&#x3002;</p>
+<pre><code class="lang-bash">$ git reflog
+</code></pre>
+<h2 id="&#x7F13;&#x5B58;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;">&#x7F13;&#x5B58;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;</h2>
+<p>&#x4E3B;&#x8981;&#x4F1A;&#x5728;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#x7528;&#x5230; stash &#x529F;&#x80FD;&#xFF1A;</p>
+<ol>
+<li>&#x5408;&#x5E76;&#x5206;&#x652F;&#x4E4B;&#x524D;&#xFF0C;&#x5982;&#x679C;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x5B58;&#x5728;&#x4FEE;&#x6539;&#x540E;&#x5E76;&#x672A;&#x63D0;&#x4EA4;&#x7684;&#x6587;&#x4EF6;&#xFF08;&#x4E0D;&#x5305;&#x62EC;&#x65B0;&#x589E;&#x7684;&#xFF09;&#xFF0C;&#x8FD9;&#x65F6;&#x8981;&#x4E48; commit &#x8981;&#x4E48; stash&#xFF1B;</li>
+<li>&#x5F53;&#x5207;&#x6362;&#x5206;&#x652F;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x5206;&#x652F;&#x5E76;&#x672A;&#x5B8C;&#x6210;&#xFF08;&#x5373;&#x8FD8;&#x6CA1;&#x5230; commit &#x7684;&#x65F6;&#x5019;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x5148; stash &#x5728;&#x5207;&#x6362;&#x5206;&#x652F;&#x5F00;&#x53D1;&#x3002;</li>
+</ol>
+<pre><code class="lang-bash">$ git stash <span class="hljs-comment"># &#x7F13;&#x5B58;</span>
+$ git stash <span class="hljs-comment"># &#x5217;&#x51FA;&#x6240;&#x6709;&#x7F13;&#x5B58;</span>
+$ git stash pop <span class="hljs-comment"># &#x8FD8;&#x539F;&#x5E76;&#x5220;&#x9664; &#xFF08;== git stash apply stash@{0} &amp;&amp; git stash drop stash@{0}&#xFF09;</span>
+$ git stash clear <span class="hljs-comment"># &#x6E05;&#x9664;&#x6240;&#x6709;</span>
+</code></pre>
+<h2 id="&#x4E0A;&#x4F20;&#x9879;&#x76EE;&#x5230;-github">&#x4E0A;&#x4F20;&#x9879;&#x76EE;&#x5230; GitHub</h2>
+<p>Git &#x652F;&#x6301; SSH &#x534F;&#x8BAE;&#xFF0C;&#x672C;&#x5730; Git &#x4ED3;&#x5E93;&#x548C; GitHub &#x4ED3;&#x5E93;&#x4E4B;&#x95F4;&#x8981;&#x5EFA;&#x7ACB;&#x52A0;&#x5BC6;&#x8FDE;&#x63A5;&#x9700;&#x8981;&#x5C06;&#x672C;&#x5730; SSH &#x516C;&#x94A5;&#xFF08;id_rsa.pub&#xFF09;&#x6DFB;&#x52A0;&#x5230;&#x8FDC;&#x7A0B; GitHub&#x3002;<br><a href=".images/github-add-ssh-key.png" data-lightbox="b41b994c-54ab-49e9-a6b3-3b6225842e2a" data-title="GitHub add ssh key"><img src=".images/github-add-ssh-key.png" alt="GitHub add ssh key"></a></p>
+<p>&#x4E0A;&#x4F20;&#x9879;&#x76EE;&#x5230; GitHub &#x9700;&#x8981;3&#x6B65;&#xFF1A;</p>
+<p>&#x7B2C;1&#x6B65;&#xFF1A; &#x5728; GitHub &#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x4ED3;&#x5E93;&#xFF08;helloworld&#xFF09;&#x3002;</p>
+<p>&#x7B2C;2&#x6B65;&#xFF1A; &#x6DFB;&#x52A0;&#x8FDC;&#x7A0B;&#x5E93;<code>origin</code>&#xFF0C;origin &#x662F; Git &#x9ED8;&#x8BA4;&#x7684;&#x53EB;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x53D6;&#x522B;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<pre><code class="lang-bash">$ git remote add origin git@github.com:jinsyin/helloworld.git
+</code></pre>
+<p>&#x7B2C;3&#x6B65;&#xFF1A; &#x628A;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;&#x5E93;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x628A;&#x5F53;&#x524D;<code>master</code>&#x5206;&#x652F;&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;&#x3002;
+&#x5BF9;&#x4E8E;&#x53C2;&#x6570;<code>-u</code>&#xFF0C;Git &#x4E0D;&#x4F46;&#x4F1A;&#x628A;&#x672C;&#x5730;&#x7684;<code>master</code>&#x5206;&#x652F;&#x5185;&#x5BB9;&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;&#x65B0;&#x7684;<code>master</code>&#x5206;&#x652F;&#xFF0C;&#x8FD8;&#x4F1A;&#x628A;&#x672C;&#x5730;&#x7684;<code>master</code>&#x5206;&#x652F;&#x548C;&#x8FDC;&#x7A0B;&#x7684;<code>master</code>&#x5206;&#x652F;&#x5173;&#x8054;&#x8D77;&#x6765;&#xFF0C;&#x5728;&#x4EE5;&#x540E;&#x7684;&#x63A8;&#x9001;&#x6216;&#x8005;&#x62C9;&#x53D6;&#x65F6;&#x53EF;&#x4EE5;&#x7B80;&#x5316;&#x547D;&#x4EE4;&#x3002;&#x4E4B;&#x540E;&#x518D;&#x63D0;&#x4EA4;&#x4E0D;&#x7528;&#x518D;&#x52A0;<code>-u</code>&#xFF08;git push origin master&#xFF09;</p>
+<pre><code class="lang-bash">$ git push -u origin master <span class="hljs-comment"># &#x63A8;&#x9001; master &#x5206;&#x652F;</span>
+$ git push -u origin dev <span class="hljs-comment"># &#x63A8;&#x9001; dev &#x5206;&#x652F;</span>
+</code></pre>
+<h2 id="&#x4ECE;-github-&#x514B;&#x9686;&#x9879;&#x76EE;">&#x4ECE; GitHub &#x514B;&#x9686;&#x9879;&#x76EE;</h2>
+<p>&#x4ECE;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x514B;&#x9686;&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A; Git &#x81EA;&#x52A8;&#x628A;&#x672C;&#x5730;&#x7684;<code>master</code>&#x5206;&#x652F;&#x548C;&#x8FDC;&#x7A0B;&#x7684;<code>master</code>&#x5206;&#x652F;&#x5BF9;&#x5E94;&#x8D77;&#x6765;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#xFF0C;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x9ED8;&#x8BA4;&#x540D;&#x79F0;&#x662F;<code>origin</code></p>
+<pre><code class="lang-bash">$ git remote
+$ git remote -v <span class="hljs-comment"># &#x663E;&#x793A;&#x53EF;&#x4EE5; fetch &#x548C; push &#x7684; origin &#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709; push &#x6743;&#x9650;&#xFF0C;&#x5C31;&#x770B;&#x4E0D;&#x5230; push &#x5730;&#x5740;</span>
+</code></pre>
+<p>Git &#x652F;&#x6301;&#x591A;&#x79CD;&#x534F;&#x8BAE;&#xFF0C;&#x5305;&#x62EC; https&#xFF0C;&#x4F46;&#x4F7F;&#x7528; ssh &#x652F;&#x6301;&#x7684;&#x539F;&#x751F; git &#x534F;&#x8BAE;&#x901F;&#x5EA6;&#x6700;&#x5FEB;&#x3002;</p>
+<pre><code>$ git clone https://github.com/jinsyin/helloworld.git
+$ git clone git@github.com/jinsyin/helloworld.git
+</code></pre><p>&#x514B;&#x9686;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x5206;&#x652F;</p>
+<pre><code class="lang-bash">$ git <span class="hljs-built_in">clone</span> -b registry-v2.6.1 https://github.com/docker/distribution-library-image.git
+</code></pre>
+<hr>
+<h2 id="&#x5206;&#x652F;&#x7BA1;&#x7406;">&#x5206;&#x652F;&#x7BA1;&#x7406;</h2>
+<p><code>HEAD</code>&#x4E25;&#x683C;&#x6765;&#x8BF4;&#x4E0D;&#x662F;&#x6307;&#x5411;&#x63D0;&#x4EA4;&#xFF0C;&#x800C;&#x662F;&#x6307;&#x5411;<code>master</code>&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#xFF0C;<code>master</code>&#x624D;&#x662F;&#x6307;&#x5411;&#x63D0;&#x4EA4;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;<code>HEAD</code>&#x6307;&#x5411;&#x7684;&#x662F;&#x5F53;&#x524D;&#x5206;&#x652F;&#x3002;  </p>
+<p><a href=".images/git-head-point-master.png" data-lightbox="f13fc107-0446-4c6b-a672-b2006ce73cb4" data-title="HEAD point master"><img src=".images/git-head-point-master.png" alt="HEAD point master"></a></p>
+<p>&#x521B;&#x5EFA; dev &#x5206;&#x652F;&#xFF0C;&#x7136;&#x540E;&#x5207;&#x6362;&#x5230; dev &#x5206;&#x652F;</p>
+<pre><code class="lang-bash">$ git checkout -b dev <span class="hljs-comment"># &#x7B49;&#x4EF7;&#x4E8E; git branch dev &amp;&amp; git checkout dev</span>
+$ git branch <span class="hljs-comment"># &#x67E5;&#x770B;&#x5206;&#x652F;</span>
+</code></pre>
+<p>&#x5F53;&#x521B;&#x5EFA;&#x65B0;&#x5206;&#x652F;<code>dev</code>&#xFF08;git branch dev&#xFF09;&#x65F6;&#xFF0C;Git &#x4F1A;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6307;&#x9488;<code>dev</code>&#xFF0C;&#x6307;&#x5411;&#x548C;<code>master</code>&#x76F8;&#x540C;&#x7684;&#x63D0;&#x4EA4;&#x3002;&#x5207;&#x6362;&#x5230;<code>dev</code>&#x5206;&#x652F;&#xFF08;git checkout dev&#xFF09;&#x540E;&#xFF0C;<code>HEAD</code>&#x4F1A;&#x6307;&#x5411;<code>dev</code>&#x3002; &#x53E6;&#x5916;&#xFF0C;<code>&#x591A;&#x4E2A;&#x5206;&#x652F;&#x662F;&#x5171;&#x7528;&#x5DE5;&#x4F5C;&#x533A;&#x548C;&#x6682;&#x5B58;&#x533A;&#x7684;</code>&#xFF0C;&#x5982;&#x679C;&#x5728;<code>master</code>&#x5206;&#x652F;&#x4E2D;&#x5DE5;&#x4F5C;&#x533A;&#x6216;&#x6682;&#x5B58;&#x533A;&#x6709;&#x4FEE;&#x6539;&#xFF0C;&#x5207;&#x6362;&#x5230;<code>dev</code>&#x5206;&#x652F;&#x4F9D;&#x7136;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4FEE;&#x6539;&#x3002;</p>
+<p><a href=".images/git-new-branch-dev.png" data-lightbox="ab9adcce-8fbf-4c7d-bcaa-fef56ba1adbb" data-title="New branch"><img src=".images/git-new-branch-dev.png" alt="New branch"></a></p>
+<p>&#x5728;<code>dev</code>&#x5206;&#x652F;&#x4E0A;&#x4F5C;&#x4FEE;&#x6539;&#x5E76;&#x63D0;&#x4EA4;&#xFF0C;<code>dev</code>&#x6307;&#x9488;&#x4F1A;&#x5F80;&#x524D;&#x79FB;&#x52A8;&#x4E00;&#x6B65;&#xFF0C;&#x800C;<code>master</code>&#x6307;&#x9488;&#x4E0D;&#x53D8;&#x3002;</p>
+<p><a href=".images/git-modify-on-branch-dev.png" data-lightbox="f0d385d6-aceb-4f97-9922-29c87fe4a8c1" data-title="Modify on branch"><img src=".images/git-modify-on-branch-dev.png" alt="Modify on branch"></a></p>
+<p>&#x628A;<code>dev</code>&#x5408;&#x5E76;&#x5230;<code>master</code>&#x4E0A;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x628A;<code>master</code>&#x6307;&#x5411;<code>dev</code>&#x7684;&#x5F53;&#x524D;&#x63D0;&#x4EA4;&#x3002;
+<a href=".images/git-master-merge-dev.png" data-lightbox="5fa3b4dd-c15d-47a3-b2ab-53fca73f734c" data-title="Master merge dev"><img src=".images/git-master-merge-dev.png" alt="Master merge dev"></a></p>
+<p>&#x5408;&#x5E76;&#x5B8C;&#x5206;&#x652F;&#x540E;&#xFF0C;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x5220;&#x9664;dev&#x5206;&#x652F;&#x3002;
+<a href=".images/git-delete-branch-dev.png" data-lightbox="97a1a86f-ee28-4644-bdc2-1feca596d20d" data-title="Delete branch"><img src=".images/git-delete-branch-dev.png" alt="Delete branch"></a></p>
+<p><code>git merge</code>&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5408;&#x5E76;&#x6307;&#x5B9A;&#x5206;&#x652F;&#x5230;&#x5F53;&#x524D;&#x5206;&#x652F;&#x3002;&#x5982;&#x679C;&#x63D0;&#x793A;<code>Fast-forward</code>&#x4FE1;&#x606F;&#xFF0C;&#x8868;&#x793A;&#x8FD9;&#x6B21;&#x5408;&#x5E76;&#x662F;&#x201C;&#x5FEB;&#x8FDB;&#x6A21;&#x5F0F;&#x201D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x76F4;&#x63A5;&#x628A;<code>master</code>&#x6307;&#x5411;<code>dev</code>&#x7684;&#x5F53;&#x524D;&#x63D0;&#x4EA4;&#xFF0C;&#x6240;&#x4EE5;&#x5408;&#x5E76;&#x901F;&#x5EA6;&#x975E;&#x5E38;&#x5FEB;&#x3002;</p>
+<pre><code class="lang-bash">$ git merge dev
+</code></pre>
+<p>&#x4F7F;&#x7528;<code>Fast-forward</code>&#x6A21;&#x5F0F;&#x6765;&#x5408;&#x5E76;&#x5206;&#x652F;&#x7684;&#x8BDD;&#xFF0C;&#x5220;&#x9664;&#x5206;&#x652F;&#x540E;&#xFF0C;&#x4F1A;&#x4E22;&#x6389;&#x5206;&#x652F;&#x4FE1;&#x606F;&#x3002;&#x4E0D;&#x8FC7;&#x53EF;&#x4EE5;&#x7981;&#x7528;<code>Fast forward</code>&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x6837;&#x5728; merge &#x65F6;&#x5C31;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684; commit&#xFF0C;&#x5E76;&#x4E14;&#x5206;&#x652F;&#x5386;&#x53F2;&#x4E0A;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x5206;&#x652F;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-bash">$ git merge --no-ff -m <span class="hljs-string">&quot;merge with no-ff&quot;</span> dev
+</code></pre>
+<p><a href=".images/git-merge-with-no-ff.png" data-lightbox="5633ff38-8bf1-4978-aa96-943601c3a108" data-title="Merge with no-ff"><img src=".images/git-merge-with-no-ff.png" alt="Merge with no-ff"></a></p>
+<pre><code class="lang-bash">$ git branch <span class="hljs-_">-d</span> dev <span class="hljs-comment"># dev &#x5206;&#x652F;&#x88AB;&#x5408;&#x5E76;&#x540E;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5220;&#x9664;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5408;&#x5E76;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5220;&#x9664;&#x4F1A;&#x63D0;&#x793A;&#x9519;&#x8BEF;&#xFF0C;&#x4F46;&#x8FD8;&#x662F;&#x63A8;&#x8350;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5220;&#x9664;&#x5206;&#x652F;</span>
+$ git branch -D dev <span class="hljs-comment"># &#x5982;&#x679C; dev &#x5206;&#x652F;&#x6CA1;&#x6709;&#x88AB;&#x5408;&#x5E76;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6765;&#x5F3A;&#x5220;</span>
+</code></pre>
+<h2 id="&#x89E3;&#x51B3;&#x51B2;&#x7A81;">&#x89E3;&#x51B3;&#x51B2;&#x7A81;</h2>
+<p>&#x5F53;<code>master</code>&#x5206;&#x652F;&#x548C;<code>feature1</code>&#x5206;&#x652F;&#x5404;&#x81EA;&#x90FD;&#x5206;&#x522B;&#x6709;&#x65B0;&#x7684;&#x63D0;&#x4EA4;&#xFF08;&#x6709;&#x51B2;&#x7A81;&#x7684;&#x63D0;&#x4EA4;&#xFF09;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-plain"># master: Creating a new branch is quick &amp; simple.
+# feature1: Creating a new branch is quick AND simple.
+</code></pre>
+<p><a href=".images/git-two-conflict-commit-on-master-and-feature1.png" data-lightbox="7fb00e0f-20c3-4218-8a0c-8dba96c07488" data-title="Two conflict commit"><img src=".images/git-two-conflict-commit-on-master-and-feature1.png" alt="Two conflict commit"></a></p>
+<p>&#x56E0;&#x4E3A;&#x4E24;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x63D0;&#x4EA4;&#x5B58;&#x5728;&#x51B2;&#x7A81;&#xFF0C;&#x6240;&#x4EE5;&#x5408;&#x5E76;&#x4F1A;&#x51FA;&#x9519;&#xFF0C;&#x4FEE;&#x6539;&#x51B2;&#x7A81;&#x6587;&#x4EF6;&#x540E;&#x5728;<code>add</code>&#x3001;<code>commit</code>&#x540E;&#x5373;&#x53EF;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#x3002;</p>
+<pre><code class="lang-bash">$ git merge feature1
+$ git status
+</code></pre>
+<p><a href=".images/git-resolve-conflict.png" data-lightbox="8a6ca2fe-8f83-4ba4-ba43-ebe8af0f0a5c" data-title="Resolve conflict"><img src=".images/git-resolve-conflict.png" alt="Resolve conflict"></a></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x5206;&#x652F;&#x7684;&#x5408;&#x5E76;&#x60C5;&#x51B5;</span>
+$ git <span class="hljs-built_in">log</span> --graph --pretty=oneline --abbrev-commit
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5408;&#x5E76;&#x5206;&#x652F;&#x4E4B;&#x540E;&#x4E5F;&#x53EF;&#x4EE5;&#x64A4;&#x9500;</span>
+$ git merge -abort
+</code></pre>
+<p>&#x5206;&#x652F;&#x7B56;&#x7565;
+<a href=".images/git-branch-team.png" data-lightbox="9db339b9-fa9a-47ae-a2a8-7ea690e309e2" data-title="Git Team"><img src=".images/git-branch-team.png" alt="Git Team"></a></p>
+<h2 id="gitigonre-&#x5FFD;&#x7565;&#x7279;&#x6B8A;&#x6587;&#x4EF6;">.gitigonre &#x5FFD;&#x7565;&#x7279;&#x6B8A;&#x6587;&#x4EF6;</h2>
+<blockquote>
+<p>.gitignore &#x6A21;&#x677F; <a href="https://github.com/github/gitignore" target="_blank">github/gitignore</a>
+.gitignore &#x81EA;&#x52A8;&#x751F;&#x6210;&#x7F51;&#x7AD9; <a href="https://www.gitignore.io" target="_blank">gitignore.io</a></p>
+</blockquote>
+<pre><code class="lang-bash">$ git check-ignore -v App.class <span class="hljs-comment"># &#x68C0;&#x67E5;&#x5FFD;&#x89C6;&#x89C4;&#x5219;</span>
+</code></pre>
+<h2 id="&#x914D;&#x7F6E;&#x522B;&#x540D;">&#x914D;&#x7F6E;&#x522B;&#x540D;</h2>
+<pre><code class="lang-bash">$ git config --global alias.st status
+$ git config --global alias.co checkout
+$ git config --global alias.ci commit
+$ git config --global alias.br branch
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x547D;&#x4EE4; git reset HEAD file &#x53EF;&#x4EE5;&#x628A;&#x6682;&#x5B58;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x64A4;&#x9500;&#x6389;&#xFF08;unstage&#xFF09;&#xFF0C;&#x91CD;&#x65B0;&#x653E;&#x56DE;&#x5DE5;&#x4F5C;&#x533A;</span>
+$ git config --global alias.unstage <span class="hljs-string">&apos;reset HEAD&apos;</span>
+$ git unstage test.py
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x8DDF;&#x8E2A; commit&#x3001;&#x5408;&#x5E76;&#x65E5;&#x5FD7;</span>
+$ git config --global alias.lg <span class="hljs-string">&quot;log --color --graph --pretty=format:&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&apos; --abbrev-commit&quot;</span>
+$ git lg -5
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x914D;&#x7F6E;</span>
+$ cat .git/config
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7528;&#x6237;&#x914D;&#x7F6E;&#xFF08;--global&#xFF09;&#xFF0C;&#x6CE8;&#xFF1A; system &#x662F;&#x6574;&#x53F0;&#x7535;&#x8111;&#xFF0C;global &#x662F;&#x5F53;&#x524D;&#x7528;&#x6237;</span>
+$ cat ~/.gitconfig
+</code></pre>
+<h2 id="&#x642D;&#x5EFA;-git-&#x670D;&#x52A1;&#x5668;">&#x642D;&#x5EFA; Git &#x670D;&#x52A1;&#x5668;</h2>
+<p><a href="https://hub.docker.com/r/gitlab/gitlab-ce/" target="_blank">Docker Gitlab image</a></p>
+<hr>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x7AE0;">&#x53C2;&#x8003;&#x6587;&#x7AE0;</h2>
+<blockquote>
+<p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank">&#x5ED6;&#x96EA;&#x5CF0;&#x7684; Git &#x6559;&#x7A0B;</a>
+<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank">&#x962E;&#x4E00;&#x5CF0;&#x7684;&#x5E38;&#x7528; Git &#x547D;&#x4EE4;&#x6E05;&#x5355;</a></p>
+</blockquote>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> Copyright &#xA9; 2019-2020 | CC BY-NC-SA 4.0 <br> &#x76F8;&#x5173;&#x7F51;&#x7AD9;: <a href="https://weplay.me" target="_blank">&#x77E5;&#x8BC6;&#x5E93;</a> <a href="https://weplay.me" target="_blank">&#x5FAE;&#x67B6;&#x6784;&#x5E08;</a> <a href="https://quickstarts.io" target="_blank">&#x5FEB;&#x901F;&#x5165;&#x95E8;</a> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x66F4;&#x65B0;&#x4E8E; 2020-02-21 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="basics/" class="navigation navigation-next " aria-label="Next page: 基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"快速入门","level":"1.2","depth":1,"next":{"title":"基础","level":"2.1","depth":1,"path":"basics/README.md","ref":"basics/README.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-fontsettings","-sharing","highlight","github","-lunr","-search","search-pro","github-buttons@2.1.0","ga","page-toc","splitter","favicon","sitemap-general","edit-link","lightbox","page-footer-ex"],"styles":{"website":".gitbook/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/jinsyin/git"},"page-footer-ex":{"copyright":"Copyright © 2019-2020 | CC BY-NC-SA 4.0 <br/> 相关网站: [知识库](https://weplay.me) [微架构师](https://weplay.me) [快速入门](https://quickstarts.io)","markdown":true,"update_format":"YYYY-MM-DD","update_label":"更新于"},"splitter":{},"search-pro":{},"page-toc":{"position":"top","selector":".markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":false},"sitemap-general":{"prefix":"https://weplay.me/git/"},"highlight":{},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"lightbox":{"jquery":true,"sameUuid":false},"github-buttons":{"repo":"jinsyin/git","types":["star"],"size":"small"},"ga":{"configuration":"auto","token":"UA-12345678-1"},"edit-link":{"label":"编辑","base":"https://github.com/jinsyin/git/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jins Yin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Git 知识库","language":"zh-hans","links":{"sidebar":{"微架构师":"https://weplay.me","快速入门":"https://quickstarts.io"}},"gitbook":"*","description":"Git 知识库：命令行、配置、奇淫巧技"},"file":{"path":"quickstart.md","mtime":"2020-02-21T11:01:54.329Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-21T11:02:38.394Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+
+    </body>
+</html>
+

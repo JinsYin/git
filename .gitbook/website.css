@@ -1,0 +1,71 @@
+a:link,a:hover,a:active,a:focus,a:visited{text-decoration:none!important}
+a:hover{color: #26CB7C}
+
+.gitbook-link{
+    display:none!important
+}
+
+/* code START */
+.markdown-section a {
+    color:#22a2c9
+}
+.markdown-section a:hover {
+    color: #2590b1;
+}
+.markdown-section pre{
+    background: #f5f8fa;
+    padding: 20px;
+    border-radius: 4px;;
+}
+.markdown-section code { /* 行内块 */
+    color: #e96900;
+    padding: 3px 5px;
+    border-radius: 2px;
+    background-color: #f5f8fa;
+}
+.markdown-section pre>code{
+    font-size: 13px;
+    color: inherit;
+}
+/* code END */
+
+/* table START */
+.markdown-section table {border: 1px solid #E6ECF1;}
+.markdown-section table tr:nth-child(2n),.markdown-section table thead tr {background-color: #f5f8fa;}
+.markdown-section table tr {border-top: none;}
+.markdown-section table td,.markdown-section table th {padding: 8px 12px;border: none;}
+/* table END */
+
+/* summary START */
+.book-summary {background: #f5f8fa;}
+.book-summary ul.summary li.active>a{color: #26CB7C;}
+.book-summary ul.summary li a:hover {background-color: rgba(230,236,241,0.9);}
+/* summary END */
+
+/* page-toc plugin START */
+.page-toc{
+    position: fixed;
+    right: 80px;
+    top: 80px;
+    background: #f5f8fa;
+    width: 230px;
+}
+.page-toc a{
+    color: #74818D;
+    padding: 3px 0;
+}
+.page-toc a:hover {
+    color: #26cb7c;
+}
+.page-toc:before{
+    content: "CONTENTS";
+    color: #9DAAB6;
+    font-size: 13px;
+}
+.page-toc>ul{
+    padding-top: 8px;
+}
+.page-toc>ul>ul{
+    padding-left: 0;
+}
+/* page-toc plugin END */
