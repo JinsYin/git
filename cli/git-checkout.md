@@ -28,7 +28,7 @@ git checkout (-p|--patch) [<tree-ish>] [--] [<paths>...] # 还原工作区文件
 
 ## 分离头指针（Detached HEAD）
 
-![分离头指针](.images/detached-head.png)
+![分离头指针](-/detached-head.png)
 
 分离头指针，即 HEAD 指针没有指向分支引用，而是指向（checkout）了某个具体的 commit 。
 

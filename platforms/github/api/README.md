@@ -17,7 +17,7 @@ curl -u <username>:<password> https://api.github.com/user
 
 不同于直接使用用户名和密码来获取 Github 所有权限，使用 Token 可以根据需要仅开放部分权限。访问 <https://github.com/settings/tokens/new> 页面创建一个 Token 。
 
-![New personal access token](.images/gh-new-personal-acc-token.png)
+![New personal access token](-/gh-new-personal-acc-token.png)
 
 * 方式一
 

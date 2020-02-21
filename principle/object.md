@@ -142,7 +142,7 @@ $ git cat-file -p c25857
 Hello,world
 ```
 
-![Demo](.images/object-demo.png)
+![Demo](-/object-demo.png)
 
 整个数据结构类似于关系型数据库中主键和外键之间的关系。
 

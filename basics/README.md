@@ -3,7 +3,7 @@
 * [版本控制](version-control.md)
 * [安装 Git](installation.md)
 
-![Git flow](../../.images/git-guide.png)
+![Git flow](-/git-guide.png)
 
 * Workspace：工作区
 * Index / Stage：暂存区
@@ -25,7 +25,7 @@
 
 由此引入 Git 项目的三个工作区域的概念：**工作目录（working tree）**、**暂存区（staging area）** 以及 **Git 仓库（Git directory）**。
 
-![工作区域](.images/git-areas.png)
+![工作区域](-/git-areas.png)
 
 Git 仓库目录是 Git 用来保存项目的元数据和对象数据库的地方。从其他计算机克隆仓库时，拷贝的就是这里的数据。
 
