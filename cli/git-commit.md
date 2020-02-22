@@ -21,6 +21,21 @@
 
 * 从 commit 生成 changelog
 
+提交之前：
+
+```sh
+# 统一文件权限
+$ find . -type f -not -path .git -exec chmod 644 {} \; # 常规文件
+$ find . -type d -not -path .git -exec chmod 755 {} \; # 目录
+
+# 末尾添加新行（Git 要求）
+$ find . -type f -not -path .git -name "*.md" -exec sed -i -e '$a\' {} \;    # Linux
+$ find . -type f -not -path "./.git/*" -name "*.md" -exec sed -i '' -e '$a\' {} \; # macOS
+
+# MacOS 删除 .DS_Store（最好事先添加到 .gitignore）
+$ find . -type f -not -path .git -name ".DS_Store" -exec rm {} \;
+```
+
 ## 技巧
 
 * 创建 “原子提交” 有利于追踪 BUG 以及回滚
