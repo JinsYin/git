@@ -9,6 +9,7 @@ install:
 
 script:
   - gitbook build  # output build results to _book directory
+  - yes | cp ./favicon.ico _book/gitbook/images/favicon.ico # implement the function of custom-favicon plugin
 
 deploy:
   local_dir: _book
