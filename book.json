@@ -18,14 +18,14 @@
     "highlight",
     "github",
     "-lunr", "-search", "search-pro",
-    "github-buttons@2.1.0",
-    "ga",
-    "page-toc",
-    "splitter",
-    "custom-favicon",
+    "-ga",
+    "-page-toc",
+    "-splitter",
+    "-lightbox",
+    "-github-buttons@2.1.0",
+    "-custom-favicon",
     "sitemap-general",
     "edit-link",
-    "lightbox",
     "page-footer-ex"
   ],
   "pluginsConfig": {
@@ -51,7 +51,7 @@
     "page-toc": {
       "selector": ".markdown-section h2, .markdown-section h3, .markdown-section h4",
       "position": "top",
-      "showByDefault": false
+      "showByDefault": true
     },
     "page-footer-ex": {
       "copyright": "Copyright © 2019-2020 | CC BY-NC-SA 4.0 <br/> 相关网站: [知识库](https://weplay.me) [微架构师](https://weplay.me) [快速入门](https://quickstarts.io)",
