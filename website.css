@@ -33,6 +33,7 @@ a:hover{color: #26CB7C}
 .markdown-section table {border: 1px solid #E6ECF1;}
 .markdown-section table tr:nth-child(2n),.markdown-section table thead tr {background-color: #f5f8fa;}
 .markdown-section table tr {border-top: none;}
+.markdown-section table th {text-align: left;}
 .markdown-section table td,.markdown-section table th {padding: 8px 12px;border: none;}
 /* table END */
 
