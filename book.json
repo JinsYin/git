@@ -5,6 +5,7 @@
   "author": "Jins Yin",
   "links": {
     "sidebar": {
+      "知识库": "https://githome.io/knowledge-base/",
       "微架构师": "https://weplay.me",
       "快速入门": "https://quickstarts.io"
     }
@@ -46,7 +47,7 @@
     },
     "favicon": "favicon.ico",
     "sitemap-general": {
-      "prefix": "https://weplay.me/git/"
+      "prefix": "https://githome.io/git/"
     },
     "page-toc": {
       "selector": ".markdown-section h2, .markdown-section h3, .markdown-section h4",
@@ -54,7 +55,7 @@
       "showByDefault": true
     },
     "page-footer-ex": {
-      "copyright": "Copyright © 2019-2020 | CC BY-NC-SA 4.0 <br/> 相关网站: [知识库](https://weplay.me) [微架构师](https://weplay.me) [快速入门](https://quickstarts.io)",
+      "copyright": "Copyright © 2019-2020 | CC BY-NC-SA 4.0 <br/> 相关网站: [知识库](https://githome.io/knowledge-base/) [微架构师](https://weplay.me) [快速入门](https://quickstarts.io)",
       "markdown": true,
       "update_label": "更新于",
       "update_format": "YYYY-MM-DD"

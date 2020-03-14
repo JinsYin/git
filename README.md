@@ -2,8 +2,8 @@
 
 [![website][website-image]][website-href]
 
-[website-image]: https://img.shields.io/website-up-down-green-red/https/weplay.me.svg
-[website-href]: https://weplay.me/
+[website-image]: https://img.shields.io/website-up-down-green-red/https/githome.io/git/.svg
+[website-href]: https://githome.io/git/
 
 ## 特点
 
