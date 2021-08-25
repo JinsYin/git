@@ -74,7 +74,7 @@ $ cat ~/.gitconfig
         pkc = cherry-pick --continue
         rd = rm -r
         rb = rebase
-        git rbc // 不变
+        #git rbc // 不变
         rbc = rebase --continue
         rbabort = rebase --abort # 防止敲错（a 和 s 靠的太近）
         rbskip = rebase --skip # 防止敲错（a 和 s 靠的太近）
